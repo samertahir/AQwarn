@@ -50,6 +50,13 @@ class RouteServiceProvider extends ServiceProvider
                 Route::middleware('sammer')
                 ->namespace($this->namespace)
                 ->group(base_path('routes/sammer.php'));
+                Route::middleware('rabia')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/rabia.php'));
+
+                Route::middleware('atiqa')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/atiqa.php'));
         });
     }
 
