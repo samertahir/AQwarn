@@ -58,6 +58,10 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace)
                 ->group(base_path('routes/atiqa.php'));
         });
+        Route::middleware('atiqa')
+        ->namespace($this->namespace)
+        ->group(base_path('routes/atiqa.php'));
+});
     }
 
     /**
