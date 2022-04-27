@@ -1,6 +1,8 @@
 @extends('layouts.master')
 @section('content')
-
+<div class="text-end">
+    <a class="btn btn-success" href="{{ route('product.create') }}">Create</a>
+</div>
 
       <div class="row">
         <div class="col-12">

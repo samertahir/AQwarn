@@ -8,9 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Feedback extends Model
 {
     use HasFactory;
-<<<<<<< Updated upstream
 
     protected $fillable=['id','user_name','contact_no','email_id','subject','message','feedback_date'];
-=======
->>>>>>> Stashed changes
 }
