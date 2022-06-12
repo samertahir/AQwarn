@@ -31,7 +31,7 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
          $category= new Category();
-         $category->category_id=$request->category_id;
+
          $category->name=$request->name;
          $category->save();
         return redirect()->back();

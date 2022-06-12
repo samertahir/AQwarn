@@ -1,10 +1,10 @@
 @extends('layouts.master')
 @section('content')
 <div>
-<form action="{{ route('category.store') }}" method="post">
+<form action="{{ isset($cate)? route('category.update',$cate->id):route('role.store')}}" method="post">
     @csrf
-    <input type="number" name="id" value="category_id" placeholder="Category ID">
-    <input type="text" name="name" value="name" placeholder="Category Name">
+
+    <input type="text" name="name" placeholder="Category Name" value="{{isset($cate)? $cate->name :'' }}">
 
 <input type="submit" name="Update">
 </form>

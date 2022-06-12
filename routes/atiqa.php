@@ -109,16 +109,16 @@ use Illuminate\Support\Facades\Route;
         Route::group(['prefix' => '/role'], function() {
         Route::get('/',[RoleController::class,'role'])->name('role.index');
         Route::get('/create',[RoleController::class,'create'])->name('role.create');
-        Route::get('/store',[RoleController::class,'edit'])->name('role.edit');
-        Route::get('/edit',[RoleController::class,'edit'])->name('role.edit');
-        Route::get('/update',[RoleController::class,'edit'])->name('role.edit');
-        Route::get('/delete',[RoleController::class,'edit'])->name('role.edit');
+        Route::post('/store',[RoleController::class,'store'])->name('role.store');
+        Route::get('/edit/{id}',[RoleController::class,'edit'])->name('role.edit');
+        Route::post('/update/{id}',[RoleController::class,'update'])->name('role.update');
+        Route::get('/delete/{id}',[RoleController::class,'delete'])->name('role.delete');
 
     });
 
         // Admin/Feedback Route Group
         Route::group(['prefix' => '/feedback'], function() {
-        Route::get('/',[FeedbackController::class,'feedback']);
+        Route::get('/',[FeedbackController::class,'feedback'])->name('feedback.index');
         Route::get('/create',[FeedbackController::class,'create']);
         Route::get('/edit',[FeedbackController::class,'edit']);
 

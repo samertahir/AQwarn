@@ -17,7 +17,7 @@
                 <table class="table align-items-center justify-content-center mb-0">
                   <thead>
                     <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Category ID</th>
+
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Category Name</th>
                       <th class="text-secondary opacity-7"></th>
                       <th class="text-secondary opacity-7"></th>
@@ -26,12 +26,11 @@
                     <tbody>
                     @foreach ($Category as $cat)
                     <tr>
-                      <td>{{$cat->category_id}}</td>
                       <td>{{$cat->name}}</td>
                       <td class="align-middle text-center">
-                          <a href="{{ route('categoty.edit',$cat->category_id) }}" class="btn btn-primary btn-sm">Edit</a></td>
+                          <a href="{{'categoty.edit'.$cat->id }}" class="btn btn-primary btn-sm">Edit</a></td>
                       <td class="align-middle text-center">
-                          <a href="{{ route('categoty.delete',$cat->name) }}" class="btn btn-primary btn-sm">Delete</a></td>
+                          <a href="{{'categoty.delete'.$cat->id}}" class="btn btn-primary btn-sm">Delete</a></td>
                     </tr>
                     @endforeach
 
