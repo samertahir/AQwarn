@@ -28,9 +28,9 @@
                     <tr>
                       <td>{{$cat->name}}</td>
                       <td class="align-middle text-center">
-                          <a href="{{'categoty.edit'.$cat->id }}" class="btn btn-primary btn-sm">Edit</a></td>
+                          <a href="{{ route('category.edit',$cat->id) }}" class="btn btn-primary btn-sm">Edit</a></td>
                       <td class="align-middle text-center">
-                          <a href="{{'categoty.delete'.$cat->id}}" class="btn btn-primary btn-sm">Delete</a></td>
+                          <a href="{{ route('category.delete',$cat->id) }}" class="btn btn-primary btn-sm">Delete</a></td>
                     </tr>
                     @endforeach
 

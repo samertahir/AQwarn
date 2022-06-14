@@ -4,23 +4,33 @@ namespace App\Http\Controllers;
 
 use App\Models\Role;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Gate;
 class RoleController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function role()
     {
 
     //Create a variable to get data from database and show it in index
      //$Role is model name & __ object name(table name)
-     $Role=Role::get();
-     return view('admin.role.index',compact('Role'));
+
+     if(Gate::allows('isAdmin'))
+     {$Role=Role::get();
+     return view('admin.role.index',compact('Role'));}
+     else
+     abort(403,"You dont habe access");
+
     //return view('admin.role.index');
 
     }
     public function create ()
     {
 
-        return view('admin.role.create');
+        return view('admin.role.index');
 
     }
     public function edit($id)

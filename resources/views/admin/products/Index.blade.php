@@ -42,9 +42,9 @@
                   <td>{{$pro->quantity_in_hand}}</td>
                   <td>{{$pro->img}}</td>
                   <td class="align-middle text-center">
-                      <a href="{{ route('categoty.edit'.$pro->id) }}" class="btn btn-primary btn-sm">Edit</a></td>
+                      <a href="{{ route('product.edit',$pro->id) }}" class="btn btn-primary btn-sm">Edit</a></td>
                   <td class="align-middle text-center">
-                      <a href="{{ route('categoty.delete'.$pro->id) }}" class="btn btn-primary btn-sm">Delete</a></td>
+                      <a href="{{ route('product.delete'.$pro->id) }}" class="btn btn-primary btn-sm">Delete</a></td>
                 </tr>
                 @endforeach
 
