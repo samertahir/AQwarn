@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class CityController extends Controller
 {
+   // public function __construct()
+   // {
+     //   $this->middleware('auth');
+   // }
     public function city()
     {
 
@@ -28,7 +32,7 @@ class CityController extends Controller
 
      $city=City::find($id);
      // return $street;
-      return view('admin.city.create',compact('city'));
+      return view('admin.city.index',compact('city'));
 
     }
     public function store(Request $request)

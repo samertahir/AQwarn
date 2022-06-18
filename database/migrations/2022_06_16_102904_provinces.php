@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddRoleToUserTable extends Migration
+class Provinces extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,11 @@ class AddRoleToUserTable extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->integer('role')->default(1);
+        Schema::create('provinces', function (Blueprint $table) {
+            $table->id();
+
+            $table->string('name');
+            $table->timestamps();
         });
     }
 
@@ -25,8 +28,6 @@ class AddRoleToUserTable extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('provinces');
     }
 }
