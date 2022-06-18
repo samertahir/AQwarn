@@ -124,7 +124,5 @@ use Illuminate\Support\Facades\Route;
         Route::get('/edit',[FeedbackController::class,'edit']);
 
     });
-      Auth ::routes();
-      Route::get('/home',[App\Http\Controllers\HomeController::class,'index' ])->name('home');
 
 });
