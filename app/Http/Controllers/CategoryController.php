@@ -4,9 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 
 class CategoryController extends Controller
 {
+    //public function __construct()
+    //{
+       // $this->middleware('auth');
+    //}
     public function category ()
     {
      //Create a variable to get data from database and show it in index
@@ -26,12 +31,12 @@ class CategoryController extends Controller
     {
         $category=Category::find($id);
        // return $category;
-        return view('admin.category.create',compact('Category'));
+        return view('admin.category.create',compact('category'));
     }
     public function store(Request $request)
     {
          $category= new Category();
-         $category->category_id=$request->category_id;
+
          $category->name=$request->name;
          $category->save();
         return redirect()->back();
@@ -43,7 +48,7 @@ class CategoryController extends Controller
         $category=Category::find($id);
         $data=$request->all();
         $category->update($data);
-        return redirect('/admin.category.index');
+        return redirect()->route('category.index');
     }
 
     public function delete($id)
@@ -51,7 +56,7 @@ class CategoryController extends Controller
         $category=Category::find($id);
 
         $category->delete();
-        return redirect('/admin.category.index');
+        return redirect()->route('category.index');
     }
 
 }

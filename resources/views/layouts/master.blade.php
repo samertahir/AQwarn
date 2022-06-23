@@ -57,7 +57,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="admin/products">
+          <a class="nav-link text-white " href="/admin/products">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">table_view</i>
             </div>
@@ -65,7 +65,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="admin/category">
+          <a class="nav-link text-white " href="/admin/category">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">receipt_long</i>
             </div>
@@ -73,7 +73,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="admin/user">
+          <a class="nav-link text-white " href="/admin/user">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">view_in_ar</i>
             </div>
@@ -81,7 +81,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="admin/order">
+          <a class="nav-link text-white " href="/admin/order">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">format_textdirection_r_to_l</i>
             </div>
@@ -89,7 +89,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="admin/reports">
+          <a class="nav-link text-white " href="/admin/reports">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">notifications</i>
             </div>
@@ -97,7 +97,7 @@
           </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white " href="admin/stock">
+            <a class="nav-link text-white " href="/admin/stock">
               <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                 <i class="material-icons opacity-10">notifications</i>
               </div>
@@ -105,7 +105,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white " href="admin/role">
+            <a class="nav-link text-white " href="/admin/role">
               <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                 <i class="material-icons opacity-10">notifications</i>
               </div>
@@ -113,7 +113,39 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white " href="admin/feedback">
+            <a class="nav-link text-white " href="/admin/location">
+              <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                <i class="material-icons opacity-10">notifications</i>
+              </div>
+              <span class="nav-link-text ms-1">Location</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white " href="/admin/province">
+              <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                <i class="material-icons opacity-10">notifications</i>
+              </div>
+              <span class="nav-link-text ms-1">Province</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white " href="/admin/city">
+              <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                <i class="material-icons opacity-10">notifications</i>
+              </div>
+              <span class="nav-link-text ms-1">City</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white " href="/admin/street">
+              <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                <i class="material-icons opacity-10">notifications</i>
+              </div>
+              <span class="nav-link-text ms-1">Street</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white " href="/admin/feedback">
               <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                 <i class="material-icons opacity-10">notifications</i>
               </div>
@@ -124,7 +156,7 @@
           <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Account pages</h6>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="./admin/feedback.html">
+          <a class="nav-link text-white " href=".//admin/feedback.html">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">person</i>
             </div>
@@ -171,8 +203,36 @@
             <div class="input-group input-group-outline">
               <label class="form-label">Type here...</label>
               <input type="text" class="form-control">
+
             </div>
           </div>
+             <div>
+                @guest
+                            @if (Route::has('login'))
+
+                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+
+                            @endif
+                            @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-end btn btn-primary btn-sm" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href=""
+                                       onclick="
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
+
           <ul class="navbar-nav  justify-content-end">
             <li class="nav-item d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
