@@ -22,7 +22,7 @@ class RoleController extends Controller
      {$Role=Role::get();
      return view('admin.role.index',compact('Role'));}
      else
-     abort(403,"Invalid Access");
+     abort(403,"Invalid");
 
     //return view('admin.role.index');
 
