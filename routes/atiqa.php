@@ -31,7 +31,7 @@ use Illuminate\Support\Facades\Route;
          Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function(){
 
              // Admin Route Group
-            Route::group(['prefix' => 'admin'], function() {
+
             Route::get('/',function(){
             return view('admin');
         });
@@ -137,4 +137,4 @@ use Illuminate\Support\Facades\Route;
 }]);
  // Route::post('logout',[App\Http\Controllers\Auth\LoginController::class,'logout'])->name('logout');
 
-});
+
