@@ -19,6 +19,7 @@ class AdminMiddleware
     {
         if ( Auth::check())
             {
+
                 //admin role == 2
                 //user role == 1
                 $role=auth()->user()->role_id;
@@ -27,6 +28,10 @@ class AdminMiddleware
                 //return redirect('home');
 
             }
+            else{
+                return route('login');
+            }
+
             return $next($request);
 
 
