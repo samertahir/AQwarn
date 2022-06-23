@@ -25,18 +25,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-       Route::get('/', function () {
-       return view('admin');
 
-});
-        // Admin Route Group
-        Route::group(['prefix' => 'admin'], function() {
-        Route::get('/',function(){
-        return view('admin');
-    });
 
 
          Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function(){
+
+             // Admin Route Group
+            Route::group(['prefix' => 'admin'], function() {
+            Route::get('/',function(){
+            return view('admin');
+        });
             // Admin/Products Route Group
             Route::group(['prefix' => '/products'], function() {
             Route::get('/',[ProductController::class,'product'])->name('product.index');
