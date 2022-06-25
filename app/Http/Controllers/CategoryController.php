@@ -16,8 +16,8 @@ class CategoryController extends Controller
     {
      //Create a variable to get data from database and show it in index
      //$Category is model name & __ object name(table name)
-        $Category=Category::get();
-         return view('admin.category.index',compact('Category'));
+        $category=Category::with('products')->get();
+         return view('admin.category.index',compact('category'));
         //return view('admin.category.index');
 
     }
@@ -58,5 +58,4 @@ class CategoryController extends Controller
         $category->delete();
         return redirect()->route('category.index');
     }
-
 }
