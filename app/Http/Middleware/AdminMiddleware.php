@@ -23,7 +23,8 @@ class AdminMiddleware
                 //admin role == 2
                 //user role == 1
                 $role=auth()->user()->role_id;
-                if($role != 2)
+                // dd(gettype($role));
+                if($role !== 2)
                 abort(403,"INVALID ACCESS");
                 //return redirect('home');
 
