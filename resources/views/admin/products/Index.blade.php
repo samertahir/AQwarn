@@ -21,9 +21,10 @@
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Product Name</th>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Product Description</th>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Product Price</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Discount</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Quality in hand</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2"> Product Discount</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Quantity-in-hand</th>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Image</th>
+
                       <th class="text-secondary opacity-7"></th>
                       <th class="text-secondary opacity-7"></th>
                       <th></th>
@@ -40,11 +41,12 @@
                   <td>{{$pro->price}}</td>
                   <td>{{$pro->discount}}</td>
                   <td>{{$pro->quantity_in_hand}}</td>
-                  <td>{{$pro->img}}</td>
+                  <td><img src="{{$pro->product_img}}"></td>
+                  <td>{{$pro->category_id}}</td>
                   <td class="align-middle text-center">
                       <a href="{{ route('product.edit',$pro->id) }}" class="btn btn-primary btn-sm">Edit</a></td>
                   <td class="align-middle text-center">
-                      <a href="{{ route('product.delete'.$pro->id) }}" class="btn btn-primary btn-sm">Delete</a></td>
+                      <a href="{{ route('product.delete',$pro->id) }}" class="btn btn-primary btn-sm">Delete</a></td>
                 </tr>
                 @endforeach
 

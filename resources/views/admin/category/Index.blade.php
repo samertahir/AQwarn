@@ -24,8 +24,9 @@
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach ($Category as $cat)
+                    @foreach ($category as $cat)
                     <tr>
+
                       <td>{{$cat->name}}</td>
                       <td class="align-middle text-center">
                           <a href="{{ route('category.edit',$cat->id) }}" class="btn btn-primary btn-sm">Edit</a></td>

@@ -41,7 +41,7 @@ Route::get('/', function () {
      Route::post('/store',[ProductController::class,'store'])->name('product.store');
      Route::get('/edit',[ProductController::class,'edit'])->name('product.edit');
      Route::post('/update',[ProductController::class,'update'])->name('product.update');
-     Route::post('/delete',[ProductController::class,'delete'])->name('product.delete');
+     Route::get('/delete',[ProductController::class,'delete'])->name('product.delete');
 
  });
 
