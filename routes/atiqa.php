@@ -28,7 +28,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-         Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function(){
+         Route::prefix('admin')->middleware(['isAdmin'])->group(function(){
 
              // Admin Route Group
 
@@ -126,7 +126,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-
+   Auth ::routes();
 
 
       Route::get('/role',[App\Http\Controllers\HomeController::class,'index' ])->name('home');
