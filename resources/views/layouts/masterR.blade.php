@@ -4,30 +4,34 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>FYP</title>
-	<link rel="stylesheet" href="/FYP/bootstrap.min.css">
-	<link rel="stylesheet" href="/FYP/bootstrap.min.js">
-	<link rel="stylesheet" type="text/css" href="css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-	
-<link rel="icon" href="images/owl.css/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{ asset('/assets/rabia/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('/assets/rabia/bootstrap.min.js') }}">
+	<link rel="stylesheet" href="{{ asset('/assets/rabia/css/all.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('/assets/rabia/bootstrap.min.css') }}">
+	<link rel="stylesheet" type="text/css" href=" ('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css')">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="('images/owl.css/favicon.ico" type="image/x-icon')}}">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-<link href="/FYP/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/font-awesome-all.css" rel="stylesheet">
-<link href="/FYP/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/flaticon.css" rel="stylesheet">
-<link href="/FYP/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/owl.css" rel="stylesheet">
-<link href="/FYP/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/bootstrap.css" rel="stylesheet">
-<link href="/FYP/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/jquery.fancybox.min.css" rel="stylesheet">
-<link href="/FYP/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/animate.css" rel="stylesheet">
-<link href="/FYP/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/imagebg.css" rel="stylesheet">
-<link href="/FYP/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/color.css" rel="stylesheet">
-<link href="/FYP/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/style.css" rel="stylesheet">
-<link href="/FYP/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/responsive.css" rel="stylesheet">
 
-	<script src="/FYP/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/bootstrap.bundle.js" type="text/javascript" charset="utf-8" async defer></script>
-    <script src="FYP/bootstrap.bundle.min.js" type="text/javascript" charset="utf-8" async defer></script>
+<link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/font-awesome-all.css')}}" rel="stylesheet">
+<link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/flaticons')}}" rel="stylesheet">
+<link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/owl.css')}}" rel="stylesheet">
+<link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/bootstrap.css')}}" rel="stylesheet">
+<link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/jquery.fancybox.min.css')}}" rel="stylesheet">
+<link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/animate.css')}}" rel="stylesheet">
+<link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/imagebg.css')}}" rel="stylesheet">
+<link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/color.css')}}" rel="stylesheet">
+<link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/style.css')}}" rel="stylesheet">
+<link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/responsive.css')}}" rel="stylesheet">
+
+	<script src="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/bootstrap.bundle.js')}}" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="{{ asset ('/assets/rabia/bootstrap.bundle.min.js')}}" type="text/javascript" charset="utf-8" async defer></script>
 
 	<style> 
 body {
-  background-image: url("file:///E:/FYP/Beautiful-Water-Drop-Wallpaper.webp");
+  background-image: url("/assets/rabia/Beautiful-Water-Drop-Wallpaper.webp");
   background-color: #cccccc;
 }
 </style>
@@ -71,30 +75,20 @@ body {
         <nav class="main-menu navbar-expand-md navbar-light">
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li class="current dropdown"><a href="#">Home</a>
-                                        <ul>
-                                            <li><a href="index.html">Home Page One</a></li>
-                                            <li><a href="index-2.html">Home Page Two</a></li>
-                                            <li class="dropdown"><a href="index.html">Header Styles</a>
-                                                <ul>
-                                                    <li><a href="index.html">Header Style One</a></li>
-                                                    <li><a href="index-2.html">Header Style Two</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                                    <li class="current dropdown"><a href="/home">Home</a>
+                                       
                                     </li> 
                                     <li class="dropdown"><a href="#">Pages</a>
                                         <ul>
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="service.html">Our Services</a></li>
-                                            <li><a href="faq.html">Our Faq's</a></li>
-                                            <li><a href="error.html">Error Page</a></li>
+                                            <li><a href="/aboutus">About Us</a></li>
+                                            <li><a href="/ourservices">Our Services</a></li>
+                                            <li><a href="/ourfaqs">Our Faq's</a></li>
+                                            <li><a href="/errorpage">Error Page</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown"><a href="#">Shop</a>
                                         <ul>
-                                            <li><a href="shop.html">Our Shop</a></li>
-                                            <li><a href="shop-details.html">Shop Details</a></li>
+                                            <li><a href="/shopdeliveryform">Our Shop</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown"><a href="#">Element</a>
@@ -111,12 +105,10 @@ body {
                                     </li>
                                     <li class="dropdown"><a href="#">Blog</a>
                                         <ul>
-                                            <li><a href="blog-grid.html">Blog Grid</a></li>
-                                            <li><a href="blog-classic.html">Blog Classic</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                            <li><a href="/blogs">Blog Details</a></li>
                                         </ul>
                                     </li>                              
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="/contact">Contact</a></li>
                                 </ul>
                             </div>
                         </nav>

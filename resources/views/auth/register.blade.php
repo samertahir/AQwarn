@@ -24,7 +24,7 @@ $locations=Location::get();
                             <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
 
                             <div class="col-md-6">
-                                <input required id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
@@ -38,7 +38,7 @@ $locations=Location::get();
                             <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
 
                             <div class="col-md-6">
-                                <input name="name" required  id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -52,7 +52,7 @@ $locations=Location::get();
                             <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
-                                <input name="password" required  id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -66,7 +66,7 @@ $locations=Location::get();
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
 
                             <div class="col-md-6">
-                                <input name="confirm_password"  required id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
 
@@ -74,7 +74,7 @@ $locations=Location::get();
                             <label for="contact_no" class="col-md-4 col-form-label text-md-end">{{ __('Contact No') }}</label>
 
                             <div class="col-md-6">
-                                <input name="contact_no" required id="contact_no" type="text" class="form-control @error('contact_no') is-invalid @enderror" name="contact_no" value="{{ old('contact_no') }}" required autocomplete="contact_no" autofocus>
+                                <input id="contact_no" type="text" class="form-control @error('contact_no') is-invalid @enderror" name="contact_no" value="{{ old('contact_no') }}" required autocomplete="contact_no" autofocus>
 
                                 @error('contact_no')
                                     <span class="invalid-feedback" role="alert">
@@ -87,7 +87,7 @@ $locations=Location::get();
                             <label for="CNIC_no" class="col-md-4 col-form-label text-md-end">{{ __('CNIC No') }}</label>
 
                             <div class="col-md-6">
-                                <input name="cnic_no " required id="CNIC_no" type="text" class="form-control @error('CNIC_no') is-invalid @enderror" name="CNIC_no" value="{{ old('CNIC_no') }}" required autocomplete="CNIC_no" autofocus>
+                                <input  id="CNIC_no" type="text" class="form-control @error('CNIC_no') is-invalid @enderror" name="cnic_no" value="{{ old('CNIC_no') }}" required autocomplete="CNIC_no" autofocus>
 
                                 @error('CNIC_no')
                                     <span class="invalid-feedback" role="alert">
@@ -97,10 +97,10 @@ $locations=Location::get();
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="DoB" class="col-md-4 col-form-label text-md-end">{{ __('DOB') }}</label>
+                            <label for="dob" class="col-md-4 col-form-label text-md-end">{{ __('DOB') }}</label>
 
                             <div class="col-md-6">
-                                <input name="dob"  required id="DoB" type="text" class="form-control @error('DoB') is-invalid @enderror" name="DoB" value="{{ old('DoB') }}" required autocomplete="DoB" autofocus>
+                                <input  id="DoB" type="date" class="form-control @error('DoB') is-invalid @enderror" name="dob" value="{{ old('DoB') }}" required autocomplete="DoB" autofocus>
 
                                 @error('DoB')
                                     <span class="invalid-feedback" role="alert">
@@ -165,19 +165,7 @@ $locations=Location::get();
                                     </div>
 
 
-                          <div class="row mb-3">
-                            <label for="role" class="col-md-4 col-form-label text-md-end">{{ __('Role') }}</label>
 
-                            <div class="col-md-6">
-                                <input name="role" required id="role" type="text" class="form-control @error('role') is-invalid @enderror" name="role" value="{{ old('role') }}" required autocomplete="role" autofocus>
-
-                                @error('role')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">

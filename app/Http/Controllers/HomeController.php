@@ -6,6 +6,14 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+<<<<<<< HEAD
+    public function index()
+    {
+        return view("navbar.HOME.index");
+    }
+}
+
+=======
     /**
      * Create a new controller instance.
      *
@@ -26,3 +34,4 @@ class HomeController extends Controller
         return view('home');
     }
 }
+>>>>>>> 7450fed71e273a56f208ad0eb9caf4da6eccf8d1
