@@ -44,9 +44,9 @@
                   <td><img src="{{$pro->product_img}}"></td>
                   <td>{{$pro->category_id}}</td>
                   <td class="align-middle text-center">
-                      <a href="{{ route('product.edit',$pro->id) }}" class="btn btn-primary btn-sm">Edit</a></td>
+                      <a href="{{ route('product.edit',['id'=>$pro->id]) }}" class="btn btn-primary btn-sm">Edit</a></td>
                   <td class="align-middle text-center">
-                      <a href="{{ route('product.delete',$pro->id) }}" class="btn btn-primary btn-sm">Delete</a></td>
+                      <a href="{{ route('product.delete',['id'=>$pro->id]) }}" class="btn btn-primary btn-sm">Delete</a></td>
                 </tr>
                 @endforeach
 

@@ -30,7 +30,7 @@ class ProductController extends Controller
         return view('admin.products.create',compact('category'));
 
     }
-    public function edit ($id)
+    public function edit (Request $request,$id)
     {
 
         $Product=Product::find($id);
