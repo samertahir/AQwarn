@@ -4,9 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Models\Street;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Gate;
 class StreetController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function street()
     {
 

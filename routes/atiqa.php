@@ -9,6 +9,11 @@ use App\Http\Controllers\ReportController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\StockController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\LocationController;
+use App\Http\Controllers\StreetController;
+use App\Http\Controllers\ProvinceController;
+use App\Http\Controllers\CityController;
+
 use App\Models\Admin;
 use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Auth;
@@ -28,7 +33,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-         Route::prefix('admin')->middleware(['isAdmin'])->group(function(){
+         Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function(){
 
              // Admin Route Group
 
@@ -111,6 +116,47 @@ use Illuminate\Support\Facades\Route;
             Route::get('/delete/{id}',[RoleController::class,'delete'])->name('role.delete');
 
         });
+            // Admin/Location Route Group
+
+             Route::group(['prefix' => '/location'], function() {
+             Route::get('/',[LocationController::class,'loc'])->name('location.index');
+             Route::get('/create',[LocationController::class,'create'])->name('location.create');
+             Route::post('/store',[LocationController::class,'store'])->name('location.store');
+             Route::get('/edit/{id}',[LocationController::class,'edit'])->name('location.edit');
+             Route::post('/update/{id}',[LocationController::class,'update'])->name('location.update');
+             Route::get('/delete/{id}',[LocationController::class,'delete'])->name('location.delete');
+});
+            // Admin/Province Route Group
+
+             Route::group(['prefix' => '/province'], function() {
+             Route::get('/',[ProvinceController::class,'prov'])->name('province.index');
+             Route::get('/create',[ProvinceController::class,'create'])->name('province.create');
+             Route::post('/store',[ProvinceController::class,'store'])->name('province.store');
+             Route::get('/edit/{id}',[ProvinceController::class,'edit'])->name('province.edit');
+             Route::post('/update/{id}',[ProvinceController::class,'update'])->name('province.update');
+             Route::get('/delete/{id}',[ProvinceController::class,'delete'])->name('province.delete');
+            });
+            // Admin/City Route Group
+
+            Route::group(['prefix' => '/city'], function() {
+            Route::get('/',[CityController::class,'city'])->name('city.index');
+            Route::get('/create',[CityController::class,'create'])->name('city.create');
+            Route::post('/store',[CityController::class,'store'])->name('city.store');
+            Route::get('/edit/{id}',[CityController::class,'edit'])->name('city.edit');
+            Route::post('/update/{id}',[CityController::class,'update'])->name('city.update');
+            Route::get('/delete/{id}',[CityController::class,'delete'])->name('city.delete');
+            });
+
+           // Admin/Street Route Group
+
+            Route::group(['prefix' => '/street'], function() {
+            Route::get('/',[StreetController::class,'street'])->name('street.index');
+            Route::get('/create',[StreetController::class,'create'])->name('street.create');
+            Route::post('/store',[StreetController::class,'store'])->name('street.store');
+            Route::get('/edit/{id}',[StreetController::class,'edit'])->name('street.edit');
+            Route::post('/update/{id}',[StreetController::class,'update'])->name('street.update');
+            Route::get('/delete/{id}',[StreetController::class,'delete'])->name('street.delete');
+    });
 
             // Admin/Feedback Route Group
             Route::group(['prefix' => '/feedback'], function() {

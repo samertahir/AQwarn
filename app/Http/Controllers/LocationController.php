@@ -2,9 +2,14 @@
 namespace App\Http\Controllers;
 use App\Models\Location;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Gate;
 class LocationController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function loc()
     {
 

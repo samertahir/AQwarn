@@ -4,13 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Models\City;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Gate;
 class CityController extends Controller
 {
-   // public function __construct()
-   // {
-     //   $this->middleware('auth');
-   // }
+    public function __construct()
+   {
+        $this->middleware('auth');
+   }
     public function city()
     {
 
