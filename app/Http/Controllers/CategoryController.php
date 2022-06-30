@@ -8,10 +8,10 @@ use Illuminate\Support\Facades\Gate;
 
 class CategoryController extends Controller
 {
-    //public function __construct()
-    //{
-       // $this->middleware('auth');
-    //}
+    public function __construct()
+    {
+     $this->middleware('auth');
+    }
     public function category ()
     {
      //Create a variable to get data from database and show it in index
