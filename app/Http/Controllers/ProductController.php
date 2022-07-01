@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Product;
-use App\Models\Products;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 
@@ -76,7 +75,7 @@ class ProductController extends Controller
             $data['product_img']='/'.$destination.$image_name;
         }
         $Product->update($data);
-        return redirect()->route('products.index');
+        return redirect()->route('product.index');
     }
 
     public function delete($id)
@@ -84,7 +83,7 @@ class ProductController extends Controller
         $Product=Product::find($id);
 
         $Product->delete();
-        return redirect()->route('products.index');
+        return redirect()->route('product.index');
     }
 
 }

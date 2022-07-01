@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 class CityController extends Controller
 {
-    public function __construct()
+   public function __construct()
    {
         $this->middleware('auth');
    }

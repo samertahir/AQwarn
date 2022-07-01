@@ -42,7 +42,6 @@
                   <td>{{$pro->discount}}</td>
                   <td>{{$pro->quantity_in_hand}}</td>
                   <td><img src="{{$pro->product_img}}"></td>
-                  <td>{{$pro->category_id}}</td>
                   <td class="align-middle text-center">
                       <a href="{{ route('product.edit',['id'=>$pro->id]) }}" class="btn btn-primary btn-sm">Edit</a></td>
                   <td class="align-middle text-center">
