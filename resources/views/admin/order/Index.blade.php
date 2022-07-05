@@ -30,7 +30,7 @@
                       <td>
                         <div class="d-flex px-2">
                           <div>
-                            <img src="{{ asst('../assets/img/small-logos/logo-asana.svg') }}" class="avatar avatar-sm rounded-circle me-2" alt="spotify">
+                            <img src="{{ asset('../assets/img/small-logos/logo-asana.svg') }}" class="avatar avatar-sm rounded-circle me-2" alt="spotify">
                           </div>
                           <div class="my-auto">
                             <h6 class="mb-0 text-sm">Asana</h6>
