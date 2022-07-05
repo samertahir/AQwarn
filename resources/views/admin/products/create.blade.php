@@ -1,22 +1,55 @@
 @extends('layouts.master')
 @section('content')
 <div>
-<form action="{{ isset($pro)? route('product.update',['id'=>$pro]):route('product.store')}}" method="post" enctype="multipart/form-data">
+<form action="{{ isset($pro)? route('product.update',$pro->id):route('product.store')}}" method="post" enctype="multipart/form-data">
     @csrf
 
     <input type="text" name="name" placeholder="Product Name" value="{{isset($pro)? $pro->name :'' }}">
-    <input type="text" name="description" placeholder="Product Description" value="{{isset($pro)? $pro-> description:''}}">
+    <br>
+    <textarea type="text" class="editor" name="description" placeholder="Product Description" >
+        {!! isset($pro)? $pro-> description:'' !!}
+    </textarea>
+    <br>
     <input type="number" name="price" placeholder="Product Price" value="{{isset($pro)? $pro->price :''}}">
+    <br>
     <input type="number" name="discount" placeholder="Product Discount" value="{{isset($pro)? $pro->price :''}}">
+    <br>
     <input type="text" name="quantity_in_hand"  placeholder="quantity_in_hand" value="{{isset($pro)? $pro->quantity_in_hand :''}}">
-<select  required name="category_id" id="">
+    <br>
+    <select  required name="category_id" >
     <option value="{{ 'null' }}">Select Category</option>
     @foreach ($category as $cat)
     <option value="  {{$cat->id}}">{{$cat->name}}</option>
      @endforeach
-</select>
+    </select>
+    <br>
     <input type="file" src="" name="image" width="50" >
+    <br>
     <input type="submit" name="Update">
+
+    <script src="/assets/build/ckeditor.js"></script>
+		<script>ClassicEditor
+				.create( document.querySelector( '.editor' ), {
+
+					licenseKey: '',
+
+
+
+				} )
+				.then( editor => {
+					window.editor = editor;
+
+
+
+
+				} )
+				.catch( error => {
+					console.error( 'Oops, something went wrong!' );
+					console.error( 'Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:' );
+					console.warn( 'Build id: fgydboej4r6a-4hihq9u9eqyi' );
+					console.error( error );
+				} );
+		</script>
 </form>
 </div>
 @endsection

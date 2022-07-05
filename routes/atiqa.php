@@ -64,7 +64,7 @@ use Illuminate\Support\Facades\Route;
 
 
             // Admin/User Route Group
-            Route::group(['prefix' => '/User'], function() {
+            Route::group(['prefix' => '/user'], function() {
             Route::get('/',[UserController::class,'user'])->name('user.index');
             Route::get('/create',[UserController::class,'create'])->name('user.create');
             Route::post('/store',[UserController::class,'store'])->name('user.store');
@@ -75,7 +75,7 @@ use Illuminate\Support\Facades\Route;
         });
 
             // Admin/Order Route Group
-            Route::group(['prefix' => '/Order'], function() {
+            Route::group(['prefix' => '/order'], function() {
             Route::get('/',[OrderController::class,'order'])->name('order.index');
             Route::get('/create',[OrderController::class,'create'])->name('order.create');
             Route::get('/store',[OrderController::class,'store'])->name('order.store');
