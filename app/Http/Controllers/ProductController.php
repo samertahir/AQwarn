@@ -32,9 +32,10 @@ class ProductController extends Controller
     public function edit (Request $request,$id)
     {
 
-        $Product=Product::find($id);
+        $pro=Product::find($id);
        // return $product;
-        return view('admin.products.create',compact('Product'));
+       $category=Category::get();
+        return view('admin.products.create',compact('pro','category'));
 
     }
     public function store(Request $request)
@@ -66,6 +67,7 @@ class ProductController extends Controller
     public function update(Request $request,$id)
     {
         //$id=$request->$id;
+
         $Product=Product::find($id);
         $data=$request->all();
         if($image=$request->file('image')){
