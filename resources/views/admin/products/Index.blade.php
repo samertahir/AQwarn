@@ -37,7 +37,7 @@
                 <tr>
 
                   <td>{{$pro->name}}</td>
-                  <td>{{$pro->description}}</td>
+                  <td>{!! isset($pro)? $pro-> description:'' !!}</td>
                   <td>{{$pro->price}}</td>
                   <td>{{$pro->discount}}</td>
                   <td>{{$pro->quantity_in_hand}}</td>
