@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="{{ asset('/assets/rabia/bootstrap.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('/assets/rabia/bootstrap.min.js') }}">
 	<link rel="stylesheet" href="{{ asset('/assets/rabia/css/all.min.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('/assets/rabia/bootstrap.min.css') }}">
+
 	<link rel="stylesheet" type="text/css" href=" ('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css')">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="('images/owl.css/favicon.ico" type="image/x-icon')}}">
 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 <link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/font-awesome-all.css')}}" rel="stylesheet">

@@ -8,6 +8,7 @@ use App\Http\Controllers\PagesErrorController;
 use App\Http\Controllers\PagesOurfaqsController;
 use App\Http\Controllers\PagesOurSErvicesController;
 use App\Http\Controllers\ShopDeliveryFormController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get("blogs",[UserProductController::class,'index']);
@@ -18,3 +19,4 @@ Route::get("error",[PagesErrorController::class,'index']);
 Route::get("ourservices",[PagesOurSErvicesController::class,'index']);
 Route::get("ourfaqs",[PagesOurfaqsController::class,'index']);
 Route::get("shopdeliveryform",[ShopDeliveryFormController::class,'index']);
+Route::get("profile",[ProfileController::class,'index']);
