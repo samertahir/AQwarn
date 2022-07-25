@@ -23,8 +23,9 @@ class CategoryController extends Controller
     }
     public function create ()
     {
+        $category=new Category();
 
-        return view('admin.category.create');
+        return view('admin.category.create', compact('category'));
 
     }
     public function edit($id)
