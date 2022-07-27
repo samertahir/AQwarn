@@ -57,7 +57,7 @@ body {
 <body>
 
 <div class="row">
-  <div class="column">
+  <div class="col-sm-3">
     <div class="card">
       <div class="card-tittle">
       <img  src="/assets/rabia/profile.jpg" class="rounded-circle" alt="John" style="width:80%">
@@ -75,16 +75,15 @@ body {
     </div>
   </div>
 
-  <div class="column">
+  <div class="col-sm-3">
     <div class="card">
       <div class="container">
-        <form action="/action_page.php">
           <div class="row">
             <div class="col-25">
-              <label for="fname"><b>Full Name</b></label>
+              <label for="fname"><b> Name</b></label>
             </div>
             <div class="col-75">
-              <input type="text" id="fname" name="firstname" placeholder="Kenneth Valdez">
+              <p>"Kenneth Valdez"</p>
             </div>
           </div>
           <br>
@@ -93,7 +92,7 @@ body {
               <label for="lname"><b>Email</b></label>
             </div>
             <div class="col-75">
-              <input type="text" id="lname" name="lastname" placeholder="AQwarn@gmail.com">
+              <p>"AQwarn@gmail.com"</p>
             </div>
           </div>
           <br>
@@ -102,7 +101,7 @@ body {
               <label for="lname"><b>Phone</b></label>
             </div>
             <div class="col-75">
-              <input type="text" id="lname" name="lastname" placeholder="+9230056387">
+              <p>"+9230056387"</p>
             </div>
             </div>
           </div>
@@ -112,27 +111,22 @@ body {
               <label for="lname"><b>Address</b></label>
             </div>
             <div class="col-75">
-              <input type="text" id="lname" name="lastname" placeholder="Bay Area Francisco,CA">
+              <p>"Bay Area Francisco,CA"</p>
             </div>
+            <button type="button" class="btn btn-primary">Follow</button>
           </div>
-          
-          <div class="row">
-            <input type="submit" value="Submit">
-          </div>
-        </form>
       </div>
     </div>
   </div>
 </div>
 
 <div class="container">
-  <h1>Devices Status</h1>
-
-<p>The meter element is used to display a gauge:</p>
+  <h1>Devices Status</h1> 
 
 <label for="device_c">Device usage C:</label>
-<meter id="device_c" value="2" min="0" max="10">2 out of 10</meter>
-<p><strong>Device C Status:</strong>10%</p>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+</div>
 <br>
 </div>
 <br>
@@ -140,7 +134,7 @@ body {
 <br>
 
 
-
+ 
 </body>
 </html>
 @endsection

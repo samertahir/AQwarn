@@ -121,7 +121,7 @@ body {
                                 <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
                                     <li class="panel-outer">
                                         <div class="form-container">
-                                            <form method="post" action="blog.html">
+                                            <form method="post" action="/profile">
                                                 <div class="form-group">
                                                     <input type="search" name="field-name" value="" placeholder="Search...." required="">
                                                     <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
