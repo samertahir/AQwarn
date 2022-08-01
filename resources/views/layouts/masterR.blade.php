@@ -90,6 +90,7 @@ body {
                                     <li class="dropdown"><a href="#">Shop</a>
                                         <ul>
                                             <li><a href="/shopdeliveryform">Our Shop</a></li>
+                                            <li><a href="/shopdetails">Shop Details</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown"><a href="#">Element</a>
