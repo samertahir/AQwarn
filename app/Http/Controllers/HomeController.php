@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        return view("navbar.HOME.index");
+        $products=Product::get();
+        return view('navbar.HOME.index',compact('products'));
+
     }
 }
 

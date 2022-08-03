@@ -18,11 +18,14 @@ class ProductController extends Controller
          //Create a variable to get data from database and show it in index
          //$Category is model name & __ object name(table name)
          $Product=Product::get();
+
+
          return view('admin.products.index',compact('Product'));
 
         //return view('admin.products.index');
 
     }
+
     public function create ()
     {
         $category=Category::get();
@@ -87,5 +90,17 @@ class ProductController extends Controller
         $Product->delete();
         return redirect()->route('product.index');
     }
+
+
+    public function add($pid)
+
+    {
+        auth()->user()->id;
+        $products =Product::find($pid);
+        
+        if(!$products){
+            abort(404);
+        }
+   }
 
 }

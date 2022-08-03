@@ -5,11 +5,11 @@
     <br>
     <div class="container">
         <div class="row">
-      <div class="column"><h1>PURE & HEALTHY <br> Drinking WAter</h1></div> 
+      <div class="column"><h1>PURE & HEALTHY <br> Drinking WAter</h1></div>
       <div class="column"> <img src="/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/double-bottle.png"></div>
         </div>
     </div>
-                
+
         <br>
         <div class="container">
         <a class="btn btn-primary btn-lg" role="button" href="">ORDER TODAY!!</a>
@@ -66,56 +66,44 @@
                 </div>
             </div>
         </section>
-        
-        
+
+
     <br>
-    
-    
-    
+
+
+
     <div class="container mt-5 mb-3 bg-light">
         <div class="row text-center">
         <h1>Bottles We Deliver</h1></div>
         <br>
+
+
+
         <div class="row text-center">
+            @foreach ($products as $pro )
                 <div class="col-sm-3">
+
                 <div class="card" style="">
                     <div class="card-body">
-            <img src="http://azim.commonsupport.com/Uaques/images/icons/bottle-2.png">
-                    <h5 class="card-title " style="color:blue">Classic Pure Water</h5><br>
+            <img src="{{ $pro->product_img }}">
+                    <h5 class="card-title " style="color:blue">{{ $pro->name }}</h5><br>
                     <span class="badge rounded-pill bg-secondary">3*2L Bottles</span><br>
-                    <p class="card-text" >Exercitation ullamco laboris nisl aliquip duis aute irure dolor iny rep henderit voluptate velit.</p>
-                    <h5 class="bg-warning">$24.00</h5><br>
-                    <a class="btn btn-primary " role="button" href="">ADD TO CART</a>
+                    <p class="card-text" >{{ $pro->discription }}</p>
+                    <h5 class="bg-warning">{{ $pro->price }}</h5><br>
+                    <a class="btn btn-primary " role="button" href="{{ route('product.addcart') }}">ADD TO CART</a>
+
+
+
+
+
+
+
                 </div></div></div>
-            <div class="col-sm-3"><div class="card"><div class="card-body">
-                <img src="http://azim.commonsupport.com/Uaques/images/icons/bottle-3.png">
-                <h5 class="card-title  " style="color:blue">Diamond Mineral Water</h5><br>
-                <span class="badge rounded-pill bg-secondary">6*3L Bottles</span><br>
-                <p  class="card-text" >Exercitation ullamco laboris nisl aliquip duis aute irure dolor iny rep henderit voluptate velit.</p>
-            <h5 class="bg-warning">$39.00</h5><br>
-        <a class="btn btn-primary " role="button" href="">ADD TO CART</a><br></div></div></div>
-        <div class="col-sm-3"><div class="card" style="" >
-                    <div class="card-body">
-                        <img src="http://azim.commonsupport.com/Uaques/images/icons/bottle-1.png">
-                        <h5 class="card-title "  style="color:blue">Naturally Spark Water</h5><br>
-                        <span class="badge rounded-pill bg-secondary">2*!L Bottles</span><br>
-                        <p class="card-text" >Exercitation ullamco laboris nisl aliquip duis aute irure dolor iny rep henderit voluptate velit.</p>
-                        <h5 class="bg-warning">$17.00</h5><br>
-                        <a class="btn btn-primary " role="button" href="">ADD TO CART</a><br>
-                    </div></div></div>
-    
-        <div class="col-3">	<div class="card" style="" >
-                    <div class="card-body">
-                        <img src="http://azim.commonsupport.com/Uaques/images/icons/bottle-3.png">
-                        <h5  class="card-title " style="color:blue">Quality Certified</h5><br>
-                        <span class="badge rounded-pill bg-secondary">3*2L Bottles</span><br>
-                        <p class="card-text" >Exercitation ullamco laboris nisl aliquip duis aute irure dolor iny rep henderit voluptate velit.</p>
-                        <h5 class="bg-warning">$17.00</h5><br>
-                        <a class="btn btn-primary " role="button" href="">ADD TO CART</a><br>
-                    </div></div></div>
+                @endforeach
+
     </div>
     <br>
-        
+
     </div>
     <div class="container">
     <h1 class="text-center mt-5 mb-3  ">Helping TO Improve</h1>
@@ -132,10 +120,10 @@
         <div class="col-lg">
             <img src="http://azim.commonsupport.com/Uaques/images/resource/video-1.jpg">
         </div>
-    
+
     </div></div>
-     
-        
+
+
     <div class="container mt-5 mb-3 ">
         <h1 class="text-center bg-warning">Uaques Basic Water</h1>
         <h1 class="text-center bg-warning">Composition</h1>
