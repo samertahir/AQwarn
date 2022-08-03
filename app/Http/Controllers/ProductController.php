@@ -92,15 +92,15 @@ class ProductController extends Controller
     }
 
 
-    public function add($pid)
+    //public function add($pid)
 
-    {
-        auth()->user()->id;
-        $products =Product::find($pid);
-        
-        if(!$products){
-            abort(404);
-        }
-   }
+    //{
+       // auth()->user()->id;
+      //  $products =Product::find($pid);
+
+        //if(!$products){
+       //     abort(404);
+       // }
+   //}
 
 }

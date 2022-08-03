@@ -49,7 +49,7 @@ use Illuminate\Support\Facades\Route;
             Route::get('/edit/{id}',[ProductController::class,'edit'])->name('product.edit');
             Route::post('/update/{id}',[ProductController::class,'update'])->name('product.update');
             Route::get('/delete/{id}',[ProductController::class,'delete'])->name('product.delete');
-            Route::get('/addCart/{pid}',[ProductController::class,'add'])->name('product.addcart');
+           // Route::get('/addCart/{pid}',[ProductController::class,'add'])->name('product.addcart');
         });
 
             // Admin/Categories Route Group
