@@ -90,7 +90,7 @@
                     <span class="badge rounded-pill bg-secondary">3*2L Bottles</span><br>
                     <p class="card-text" >{{ $pro->discription }}</p>
                     <h5 class="bg-warning">{{ $pro->price }}</h5><br>
-                    <a class="btn btn-primary " role="button" href="{{ route('product.addcart') }}">ADD TO CART</a>
+                    <a class="btn btn-primary " role="button" href="">ADD TO CART</a>
 
 
 
