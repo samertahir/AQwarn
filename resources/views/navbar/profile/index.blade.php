@@ -123,7 +123,7 @@ body {
 <div class="container">
   <h1>Devices Status</h1> 
 
-<label for="device_c">Device usage C:</label>
+<label for="device_c">Device usage :</label>
 <div class="progress">
   <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
 </div>
@@ -132,6 +132,14 @@ body {
 <br>
 <br>
 <br>
+
+<?php
+$device = array("AQwarn Device1 Status"=>"35%", "AQwarn Device2 Status"=>"37%", "AQwarn Device3 Status"=>"43%");
+
+foreach($device as $x => $val) { 
+  echo "$x = $val<br>";
+}
+?>
 
 
  
