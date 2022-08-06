@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ShopDeliveryFormController extends Controller
+class OurShopController extends Controller
 {
     public function index()
     {
-        return view("navbar.SHOP.deliveryform");
+        return view("navbar.SHOP.ourshop");
     }
 }

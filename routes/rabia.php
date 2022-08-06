@@ -11,6 +11,7 @@ use App\Http\Controllers\ShopDeliveryFormController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DevicesController;
 use App\Http\Controllers\ShopDetailsController;
+use App\Http\Controllers\OurShopController;
 use Illuminate\Support\Facades\Route;
 
 Route::get("blogs",[UserProductController::class,'index']);
@@ -24,3 +25,4 @@ Route::get("shopdeliveryform",[ShopDeliveryFormController::class,'index']);
 Route::get("profile",[ProfileController::class,'index']);
 Route::get("devices",[DevicesController::class,'index']);
 Route::get("shopdetails",[ShopDetailsController::class,'index']);
+Route::get("ourshop",[OurShopController::class,'index']);

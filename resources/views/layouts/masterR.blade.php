@@ -77,7 +77,6 @@ body {
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
                                     <li class="current dropdown"><a href="/home">Home</a>
-                                       
                                     </li> 
                                     <li class="dropdown"><a href="#">Pages</a>
                                         <ul>
@@ -89,8 +88,10 @@ body {
                                     </li>
                                     <li class="dropdown"><a href="#">Shop</a>
                                         <ul>
-                                            <li><a href="/shopdeliveryform">Our Shop</a></li>
+                                            <li><a href="/shopdeliveryform">Order Form</a></li>
                                             <li><a href="/shopdetails">Shop Details</a></li>
+                                            <li><a href="/ourshop">Our Shop</a></li>
+
                                         </ul>
                                     </li>
                                     <li class="dropdown"><a href="#">Element</a>
@@ -111,24 +112,22 @@ body {
                                         </ul>
                                     </li>                              
                                     <li><a href="/contact">Contact</a></li>
+                                    <li class="dropdown pull-right "><a class="navbar-brand" href="/devices">
+                                        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar Logo" style="width:100px;" class="rounded-circle"> 
+                                      </a></li>
+                                      <li class="dropdown  "><a class="navbar-brand" href="/ourshop">
+                                        <img src="assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/cart.png" alt="Avatar Logo" style="width:90px;" class="rounded-circle">
+                                        <span>2</span> 
+                                      </a></li>
                                 </ul>
                             </div>
                         </nav>
                     </div>
-                    <div class="menu-right-content pull-left clearfix">
-                        <div class="search-box-outer">
-                            <div class="dropdown">
-                                <button class="search-box-btn" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flaticon-magnifying-glass"></i></button>
-                                <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
-                                    <li class="panel-outer">
-                                        <div class="form-container">
-                                            <form method="post" action="/profile">
-                                                <div class="form-group">
-                                                    <input type="search" name="field-name" value="" placeholder="Search...." required="">
-                                                    <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                    
+                </div>
+            </div>
+        </div>
 
-    </div>
-</nav>
 @yield('content')  
 <!--end navbar-->
 
