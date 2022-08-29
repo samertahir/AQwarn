@@ -9,5 +9,5 @@ class Device extends Model
 {
     use HasFactory;
 
-    protected $fillable=['id','device_name','description','device_id'];
+    protected $fillable=['id','device_name','description','device_id','user_id','status'];
 }
