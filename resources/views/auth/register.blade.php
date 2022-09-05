@@ -69,7 +69,15 @@ $locations=Location::get();
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
+                        <div class="row mb-3">
+                            <label for="Address" class="col-md-4 col-form-label text-md-end">{{ __('Address') }}</label>
 
+                            <div class="col-md-6">
+                                <textarea id="address"  class="form-control" name="address" required autocomplete="address">
+
+                                </textarea>
+                         </div>
+                        </div>
                         <div class="row mb-3">
                             <label for="contact_no" class="col-md-4 col-form-label text-md-end">{{ __('Contact No') }}</label>
 
