@@ -1,11 +1,10 @@
 <?php
 
-use Illuminate\Bus\Dispatcher;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddStatusToDevicesTable extends Migration
+class AddAttributeStatusToDevices extends Migration
 {
     /**
      * Run the migrations.
@@ -15,7 +14,7 @@ class AddStatusToDevicesTable extends Migration
     public function up()
     {
         Schema::table('devices', function (Blueprint $table) {
-            $table->enum("status",['Place','Dispatcher','Delivered'])->default('Place');
+            $table->double('status');
         });
     }
 
