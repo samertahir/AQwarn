@@ -5,7 +5,7 @@
 <br>
 <br>
 <!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -55,89 +55,58 @@ body {
 </style>
 </head>
 <body>
-
-<div class="row">
-  <div class="col-sm-3">
-    <div class="card">
-      <div class="card-tittle">
-      <img  src="/assets/rabia/profile.jpg" class="rounded-circle" alt="John" style="width:80%">
-      </div>
-      <div class="card-body">
-        <h1>John Doe</h1>
-        <p class="title">CEO & Founder, Example</p>
-        <p>Harvard University</p>
-        <a href="#"><i class="fa fa-dribbble"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <p><button class="btn btn-primary">Contact</button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-sm-3">
-    <div class="card">
-      <div class="container">
-          <div class="row">
-            <div class="col-25">
-              <label for="fname"><b> Name</b></label>
-            </div>
-            <div class="col-75">
-              <p>"Kenneth Valdez"</p>
-            </div>
+<div class="container">
+  <div class="row">
+       <div class="col-sm-4  " style="">
+        <diV class="card" style="width 100%;">
+          <label for="fname"><b> Name</b></label>
+          <p>"Kenneth Valdez"</p>
+          <label for="lname"><b>Email</b></label>
+          <p>"AQwarn@gmail.com"</p>
+          <label for="lname"><b>Phone</b></label> "
+          <p>"+9230056387"</p>
+          <label for="lname"><b>Address</b></label>
+          <p>"Bay Area Francisco,CA"</p>
+          <p><button class="btn btn-primary">Follow</button></p>
+         </div>
+        </diV>
+        
+       <div class="col-sm-4" style="">
+       <div class="card" style="width 100%;">
+        <div class="card-tittle">
+          <img  src="/assets/rabia/profile.jpg" class="rounded-circle" alt="John" style="width:80%">
           </div>
-          <br>
-          <div class="row">
-            <div class="col-25">
-              <label for="lname"><b>Email</b></label>
-            </div>
-            <div class="col-75">
-              <p>"AQwarn@gmail.com"</p>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-25">
-              <label for="lname"><b>Phone</b></label>
-            </div>
-            <div class="col-75">
-              <p>"+9230056387"</p>
-            </div>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-25">
-              <label for="lname"><b>Address</b></label>
-            </div>
-            <div class="col-75">
-              <p>"Bay Area Francisco,CA"</p>
-            </div>
-            <button type="button" class="btn btn-primary">Follow</button>
-          </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3">
-    <div class="card">
-      <div class="container">
-        <div class="row">
-<label for="device_c">Device usage :</label>
-<div>
-  @foreach($devices as $dev)
-  <label>{{$dev->device_name}}</label>
-  <div class="progress">
-      <div class="progress-bar" role="progressbar" style="width:{{$dev->status}}% ;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{$dev->status}}</div>
-    </div>
-    @endforeach
-</div>
-        </div>
-      </div>
-    </div>
+          <div class="card-body">
+            <h1>John Doe</h1>
+            <p class="title">CEO & Founder, Example</p>
+            <p>Harvard University</p>
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <p><button class="btn btn-primary">Contact</button></p>
+          </div></div>
+       </div>
+        
+       <div class="col-sm-4  " style="">
+        <diV class="card" style="width 100%;">
+          <label for="device_c">Device usage :</label>
+          <div>
+            @foreach($devices as $dev)
+            <label>{{$dev->device_name}}</label>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:{{$dev->status}}% ;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{$dev->status}}</div>
+              </div>
+              @endforeach
+          </div></div>
+        </diV>
+       
   </div>
 </div>
-
-
+@auth
+    <p>Only logged in users can view this</p>
+    <a href="/logout">Logout</a>
+@endauth
 </body>
 </html>
 @endsection

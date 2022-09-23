@@ -7,13 +7,26 @@
     <link rel="stylesheet" href="{{ asset('/assets/rabia/bootstrap.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('/assets/rabia/bootstrap.min.js') }}">
 	<link rel="stylesheet" href="{{ asset('/assets/rabia/css/all.min.css')}}">
+   
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    
 
-	<link rel="stylesheet" type="text/css" href=" ('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css')">
+
+
+
+    
+
+	<!--<link rel="stylesheet" type="text/css" href=" ('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css')">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="('images/owl.css/favicon.ico" type="image/x-icon')}}">
+
 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<-->
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+
 
 
 <link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/font-awesome-all.css')}}" rel="stylesheet">
@@ -38,34 +51,33 @@ body {
 </style>
 </head>
 
-
 <header class="main-header style-two">
-    <!-- header-top -->
-    <div class="header-top">
-        <div class="auto-container clearfix">
-            <div class="top-left pull-left">
-                <ul class="info-box clearfix">
-                    <li><i class="fas fa-phone"></i>For Orders <a href="tel:8120703692" class="phone">812-070-3692</a></li>
-                    <li><i class="far fa-envelope-open"></i><a href="mailto:donations@example.org">donations@example.org</a></li>
-                    <li><i class="far fa-clock"></i>Monday to Friday 9am to 5pm</li>
-                </ul>
-            </div>
-            <div class="top-right pull-right">
-                <ul class="social-links clearfix">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                </ul>
-            </div>
+ <!-- header-top -->
+ <div class="header-top">
+    <div class="auto-container clearfix">
+        <div class="top-left pull-left">
+            <ul class="info-box clearfix">
+                <li><i class="fas fa-phone"></i>For Orders <a href="tel:8120703692" class="phone">812-070-3692</a></li>
+                <li><i class="far fa-envelope-open"></i><a href="mailto:donations@example.org">donations@example.org</a></li>
+                <li><i class="far fa-clock"></i>Monday to Friday 9am to 5pm</li>
+            </ul>
         </div>
+        <div class="top-right pull-right">
+            <ul class="social-links clearfix">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+            </ul>
+        </div>
+    </div>
 
 
 <nav class="navbar bg-light navbar-light  navbar-expand-sm mt-1 sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="" >AQwarn</a>
-    <!--<ul class="navbar-nav ">
+        <a class="navbar-brand" href="" ><b>AQwarn</b></a>
+  <!--  <ul class="navbar-nav ">
         <li class="nav-item"><a class="nav-link" href="" title="">HOME</a></li>
         <li class="nav-item"><a class="nav-link" href="" title="">PAGES</a></li>
         <li class="nav-item"><a class="nav-link" href="" title="">SHOP</a></li>
@@ -73,7 +85,13 @@ body {
         <li class="nav-item"><a class="nav-link" href="" title="">CONTACT</a></li>
         <li class="nav-item"><a class="nav-link" href="" title="">CART</a></li>
     </ul><-->
-        <nav class="main-menu navbar-expand-md navbar-light">
+   <!-- <div class="outer-container">
+        <div class="auto-container">
+            <div class="header-upper clearfix">
+                <div class="upper-left pull-left clearfix">
+                    <figure class="logo-box"><a href="index.html"><img src="http://azim.commonsupport.com/Uaques/images/logo.png" alt=""></a></figure>
+                </div><-->
+        <nav class="main-menu navbar-expand-md navbar-light sticky-top">
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
                                     <li class="current dropdown"><a href="/home">Home</a>
@@ -112,11 +130,13 @@ body {
                                         </ul>
                                     </li>                              
                                     <li><a href="/contact">Contact</a></li>
-                                    <li class="dropdown pull-right "><a class="navbar-brand" href="/devices">
-                                        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar Logo" style="width:100px;" class="rounded-circle"> 
-                                      </a></li>
+                                    <li class="dropdown"><a href="#"><i class="fa fa-arrow-circle-down" style="font-size:48px;color:primary"></i></a>
+                                        <ul>
+                                            <li><a href="/devices">Profile</a></li>
+                                            <li><a href="video-layout.html">logout</a></li>
+                                    </li>
                                       <li class="dropdown  "><a class="navbar-brand" href="/ourshop">
-                                        <img src="assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/cart.png" alt="Avatar Logo" style="width:90px;" class="rounded-circle">
+                                        <img src="assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/cart.png" alt="Avatar Logo" style="width:65px;" class="rounded-circle">
                                         <span>2</span> 
                                       </a></li>
                                 </ul>
@@ -127,9 +147,11 @@ body {
                 </div>
             </div>
         </div>
+    </nav>
 
-@yield('content')  
-<!--end navbar-->
+@yield('content') 
+
+
 
 
 <footer class="main-footer">
@@ -165,8 +187,8 @@ body {
                 <div class="row clearfix">
                     <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                         <div class="logo-widget footer-widget">
-                            <figure class="footer-logo"><!--<a href="index.html"><img src="/FYP/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/footer-logo.png" alt=""></a>--><h3 class="bg-warning">AQwarn</h3></figure>
-                            <div class="text">Aliquaut enim mini veniam quis trud exerc tation ullamco exa consequat. Duis aute rue dolor prehendrit lorem ipsum sit amet cons ctetur adipisicing sed.</div>
+                            <figure class="footer-logo"><a href="index.html"><img src="/FYP/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/footer-logo.png" alt=""></a>--><h3 class="bg-warning">AQwarn</h3></figure>
+                            <div class="text">AQwarn the automatic system with smart sensor, which will sense the water level and generate an alert via web Application. The user does not need to monitor the water level, this automatic system have the ability to transfer data without human interaction through a network. </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
@@ -201,9 +223,9 @@ body {
                             <h3 class="widget-title">Contact us</h3>
                             <div class="widget-content">
                                 <ul class="list clearfix">
-                                    <li>3065 Upton Avenue, Guilford Maine 04443 USA</li>
-                                    <li>Call Us <a href="tel:12078761059">+1 207-876-1059</a></li>
-                                    <li>E-mail: <a href="mailto:info@example.com">info@example.com</a></li>
+                                    <li>Satellite Town, Gujranwala Pakistan</li>
+                                    <li>Call Us <a href="tel:12078761059">03007430245</a></li>
+                                    <li>E-mail: <a href="mailto:info@example.com">superadmin@gmail.com</a></li>
                                 </ul>
                             </div>
                         </div>
