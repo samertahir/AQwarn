@@ -1,8 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Models\Cart;
+use App\Models\CartItems;
 use App\Models\Category;
 use App\Models\Product;
+use App\Models\User;
+use Illuminate\Auth\Events\Login;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 
@@ -92,15 +97,63 @@ class ProductController extends Controller
     }
 
 
-    //public function add($pid)
+    public function add($pid)
 
-    //{
-       // auth()->user()->id;
-      //  $products =Product::find($pid);
+    {
 
-        //if(!$products){
-       //     abort(404);
-       // }
-   //}
+        $user_id=auth()->user()->id;
+        //$order_total=0;
+        //$discount_rate=0;
+        //$address=auth()->user()->address;
+
+        $products =Product::find($pid);
+
+        if(!$products){
+            abort(404);
+        }
+        // $oldcart=User::has('login')? User::get('cart'): null;
+        // $cart = new Cart();
+        // $cart->user_id = $user;
+        // $cart->order_total =$order_total;
+        // $cart->discount_rate = $discount_rate;
+        // $cart->address = 'dfdg';
+        // $cart->save();
+
+        //  $cart_id=$cart;
+        //  $product_price=0;
+         $quantity=1;
+
+        $items=CartItems::where('user_id',$user_id)->where('product_id',$pid)->first();
+        if($items!=null){
+
+        $items->increment('quantity');
+
+
+        }
+
+    else{
+        $cartitems = new CartItems();
+        $cartitems->product_id= $pid;
+        $cartitems->user_id = $user_id;
+        $cartitems->quantity=$quantity;
+
+        $cartitems->save();
+
+
+    }
+
+
+
+
+   
+
+
+
+
+
+    }
+
+   
+
 
 }
