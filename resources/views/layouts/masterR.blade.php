@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="{{ asset('/assets/rabia/bootstrap.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('/assets/rabia/bootstrap.min.js') }}">
 	<link rel="stylesheet" href="{{ asset('/assets/rabia/css/all.min.css')}}">
-   
+
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    
 
 
 
 
-    
+
+
 
 	<!--<link rel="stylesheet" type="text/css" href=" ('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css')">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -43,7 +43,7 @@
 	<script src="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/bootstrap.bundle.js')}}" type="text/javascript" charset="utf-8" async defer></script>
     <script src="{{ asset ('/assets/rabia/bootstrap.bundle.min.js')}}" type="text/javascript" charset="utf-8" async defer></script>
 
-	<style> 
+	<style>
 body {
   background-image: url("/assets/rabia/Beautiful-Water-Drop-Wallpaper.webp");
   background-color: #cccccc;
@@ -95,7 +95,7 @@ body {
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
                                     <li class="current dropdown"><a href="/home">Home</a>
-                                    </li> 
+                                    </li>
                                     <li class="dropdown"><a href="#">Pages</a>
                                         <ul>
                                             <li><a href="/aboutus">About Us</a></li>
@@ -128,7 +128,7 @@ body {
                                         <ul>
                                             <li><a href="/blogs">Blog Details</a></li>
                                         </ul>
-                                    </li>                              
+                                    </li>
                                     <li><a href="/contact">Contact</a></li>
                                     <li class="dropdown"><a href="#"><i class="fa fa-arrow-circle-down" style="font-size:48px;color:primary"></i></a>
                                         <ul>
@@ -137,19 +137,26 @@ body {
                                     </li>
                                       <li class="dropdown  "><a class="navbar-brand" href="/ourshop">
                                         <img src="assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/cart.png" alt="Avatar Logo" style="width:65px;" class="rounded-circle">
-                                        <span>2</span> 
+                                        {{-- <span>2</span>  --}}
+                                        <span class="badge badge-info">
+                                            @foreach ($cartitems as $cart)
+                                        {{ $cart->product_id}}
+                                        {{ $cart->user_id}}
+                                        {{ $cart->quantity }}
+                                        @endforeach
+                                    </span>
                                       </a></li>
                                 </ul>
                             </div>
                         </nav>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </nav>
 
-@yield('content') 
+@yield('content')
 
 
 
@@ -170,7 +177,7 @@ body {
                     </form>
                 </div>
                 <div class="footer-social pull-right">
-                    <ul class="social-links clearfix"> 
+                    <ul class="social-links clearfix">
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
@@ -245,4 +252,4 @@ body {
 
 
 </body>
-</html> 
+</html>

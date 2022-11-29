@@ -96,6 +96,12 @@ class ProductController extends Controller
         return redirect()->route('product.index');
     }
 
+    public function cartitems()
+    {
+        $cartitems=CartItems::get();
+        return view('layouts.masterR',compact('cartitems'));
+
+    }
 
     public function add($pid)
 
@@ -127,6 +133,7 @@ class ProductController extends Controller
         if($items!=null){
 
         $items->increment('quantity');
+        return redirect()->back();
 
 
         }
@@ -138,22 +145,17 @@ class ProductController extends Controller
         $cartitems->quantity=$quantity;
 
         $cartitems->save();
-
-
-    }
-
-
-
-
-   
-
-
-
-
+        return redirect()->back();
 
     }
 
-   
+    }
+     public function count(){
+        $user_id=auth()->user()->id;
+        $cartitems=CartItems::where('user_id',$user_id)->count();
+
+     }
+
 
 
 }
