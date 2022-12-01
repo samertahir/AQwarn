@@ -12,6 +12,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DevicesController;
 use App\Http\Controllers\ShopDetailsController;
 use App\Http\Controllers\OurShopController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get("blogs",[UserProductController::class,'index']);

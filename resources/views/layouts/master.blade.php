@@ -717,6 +717,38 @@
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="./assets/js/material-dashboard.min.js?v=3.0.2"></script>
+
+
+  <script type="module">
+    
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyAhoyB0tz6TLnrlfDIyH7B-r2gnGijZIuk",
+        authDomain: "aqwarn-7d909.firebaseapp.com",
+        databaseURL: "https://aqwarn-7d909-default-rtdb.firebaseio.com",
+        projectId: "aqwarn-7d909",
+        storageBucket: "aqwarn-7d909.appspot.com",
+        messagingSenderId: "570662900713",
+        appId: "1:570662900713:web:f6630694badd8afceab178",
+        measurementId: "G-H5PGLD2ME9"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    import { getDatabase, ref, set, child, update, remove, onValue } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-database.js";
+
+
+
+    const db = getDatabase();
+    // const issuesRef = db.ref('Test/');
+    @yield('fcm-db')
+    </script>
 </body>
 
 </html>

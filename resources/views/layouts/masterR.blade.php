@@ -29,18 +29,18 @@
 
 
 
-<link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/font-awesome-all.css')}}" rel="stylesheet">
-<link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/flaticons')}}" rel="stylesheet">
-<link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/owl.css')}}" rel="stylesheet">
-<link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/bootstrap.css')}}" rel="stylesheet">
-<link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/jquery.fancybox.min.css')}}" rel="stylesheet">
-<link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/animate.css')}}" rel="stylesheet">
-<link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/imagebg.css')}}" rel="stylesheet">
-<link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/color.css')}}" rel="stylesheet">
-<link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/style.css')}}" rel="stylesheet">
-<link href="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/responsive.css')}}" rel="stylesheet">
+<link href="{{ asset ('/assets/rabia/Uaques/font-awesome-all.css')}}" rel="stylesheet">
+<link href="{{ asset ('/assets/rabia/Uaques/flaticons')}}" rel="stylesheet">
+<link href="{{ asset ('/assets/rabia/Uaques/owl.css')}}" rel="stylesheet">
+<link href="{{ asset ('/assets/rabia/Uaques/bootstrap.css')}}" rel="stylesheet">
+<link href="{{ asset ('/assets/rabia/Uaques/jquery.fancybox.min.css')}}" rel="stylesheet">
+<link href="{{ asset ('/assets/rabia/Uaques/animate.css')}}" rel="stylesheet">
+<link href="{{ asset ('/assets/rabia/Uaques/imagebg.css')}}" rel="stylesheet">
+<link href="{{ asset ('/assets/rabia/Uaques/color.css')}}" rel="stylesheet">
+<link href="{{ asset ('/assets/rabia/Uaques/style.css')}}" rel="stylesheet">
+<link href="{{ asset ('/assets/rabia/Uaques/responsive.css')}}" rel="stylesheet">
 
-	<script src="{{ asset ('/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/bootstrap.bundle.js')}}" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="{{ asset ('/assets/rabia/Uaques/bootstrap.bundle.js')}}" type="text/javascript" charset="utf-8" async defer></script>
     <script src="{{ asset ('/assets/rabia/bootstrap.bundle.min.js')}}" type="text/javascript" charset="utf-8" async defer></script>
 
 	<style>

@@ -23,4 +23,14 @@ $devices->status=$status;
 $devices->save();
 return $devices;
     }
+
+    public function get($id,$status)
+    {
+        // return $id.$status;
+
+     $devices=Device::find($id);
+$devices->status=$status;
+$devices->save();
+return $devices;
+    }
 }
