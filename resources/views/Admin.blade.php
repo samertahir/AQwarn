@@ -9,7 +9,7 @@
           </div>
           <div class="text-end pt-1">
             <p class="text-sm mb-0 text-capitalize">Today's Money</p>
-            <h4 class="mb-0">$53k</h4>
+            <h4 class="mb-0" id="db_value">$53k</h4>
           </div>
         </div>
         <hr class="dark horizontal my-0">
@@ -477,5 +477,21 @@
       </div>
     </div>
   </div>
+@endsection
+
+@section('fcm-db')
+
+const issuesRef = ref(db, 'Test');
+    // console.log(issuesRef);
+
+    onValue(issuesRef, (snapshot) => {
+      const value = snapshot.val();
+      document.getElementById('db_value').innerHTML = value;
+    // snapshot.forEach(snap => {
+
+    // })
+  });
+
+
 @endsection
 
