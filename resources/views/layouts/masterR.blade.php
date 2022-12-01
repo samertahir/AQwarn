@@ -130,22 +130,20 @@ body {
                                         </ul>
                                     </li>
                                     <li><a href="/contact">Contact</a></li>
+                                    <li class="dropdown  "><a class="navbar-brand" href="/ourshop">
+                                        <img src="assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/cart.png" alt="Avatar Logo" style="width:65px;" class="rounded-circle">
+
+                                        <span class="badge badge-info">
+
+                                        {{ getitems_count() }}
+                                    </span>
+                                      </a></li>
                                     <li class="dropdown"><a href="#"><i class="fa fa-arrow-circle-down" style="font-size:48px;color:primary"></i></a>
                                         <ul>
                                             <li><a href="/devices">Profile</a></li>
                                             <li><a href="video-layout.html">logout</a></li>
                                     </li>
-                                      <li class="dropdown  "><a class="navbar-brand" href="/ourshop">
-                                        <img src="assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/cart.png" alt="Avatar Logo" style="width:65px;" class="rounded-circle">
-                                        {{-- <span>2</span>  --}}
-                                        <span class="badge badge-info">
-                                            @foreach ($cartitems as $cart)
-                                        {{ $cart->product_id}}
-                                        {{ $cart->user_id}}
-                                        {{ $cart->quantity }}
-                                        @endforeach
-                                    </span>
-                                      </a></li>
+
                                 </ul>
                             </div>
                         </nav>
