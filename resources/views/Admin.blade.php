@@ -481,7 +481,7 @@
 
 @section('fcm-db')
 
-const issuesRef = ref(db, 'Test');
+const issuesRef = ref(db, '/Board/145612375/level');
     // console.log(issuesRef);
 
     onValue(issuesRef, (snapshot) => {
