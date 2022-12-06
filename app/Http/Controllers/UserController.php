@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Auth;
 class UserController extends Controller
 {
     public function __construct()
@@ -27,5 +28,8 @@ class UserController extends Controller
 
         return view('admin.user.index');
 
+    }
+    
+       
     }
 }

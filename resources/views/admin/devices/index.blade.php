@@ -93,10 +93,12 @@ body {
           <label for="device_c">Device usage :</label>
           <div>
             @foreach($devices as $dev)
+            @if($dev->user_id==$user->id)
             <label>{{$dev->device_name}}</label>
             <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width:{{$dev->status}}% ;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{$dev->status}}</div>
               </div>
+              @endif
               @endforeach
           </div></div>
         </diV>

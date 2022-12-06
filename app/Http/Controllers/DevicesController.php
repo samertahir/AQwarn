@@ -11,7 +11,15 @@ class DevicesController extends Controller
     public function index()
     {
         $devices=Device::get();
-         return view('admin.devices.index',compact('devices'));
+        $user=auth()->user();
+        
+        
+        // return $user;
+        
+        
+         return view('admin.devices.index',compact('devices','user'));
+         
+         
 
     }
     public function update($id,$status)
@@ -23,14 +31,6 @@ $devices->status=$status;
 $devices->save();
 return $devices;
     }
-
-    public function get($id,$status)
-    {
-        // return $id.$status;
-
-     $devices=Device::find($id);
-$devices->status=$status;
-$devices->save();
-return $devices;
-    }
+   
+    
 }
