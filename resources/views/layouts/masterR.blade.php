@@ -131,7 +131,7 @@ body {
                                     </li>
                                     <li><a href="/contact">Contact</a></li>
                                     <li class="dropdown "><a class="navbar-brand" href="/ourshop">
-                                        <img src="assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/cart.png" alt="Avatar Logo" style="width:65px;" class="rounded-circle">
+                                        <img src="assets/rabia/Uaques/cart.png" alt="Avatar Logo" style="width:65px;" class="rounded-circle">
 
                                         <span class="badge badge-info">
 
