@@ -59,14 +59,30 @@ body {
   <div class="row">
        <div class="col-sm-4  " style="">
         <diV class="card" style="width 100%;">
-          <label for="fname"><b> Name</b></label>
-          <p>"Kenneth Valdez"</p>
+          <label for="lname"><b>Name</b></label>
+          @foreach($users as $usr)
+          @if($usr->id==$user->id)
+          <p>{{$usr->name}}</p>
+          @endif
+              @endforeach
           <label for="lname"><b>Email</b></label>
-          <p>"AQwarn@gmail.com"</p>
-          <label for="lname"><b>Phone</b></label> "
-          <p>"+9230056387"</p>
+          @foreach($users as $usr)
+          @if($usr->id==$user->id)
+          <p>{{$usr->email}}</p>
+          @endif
+              @endforeach
+          <label for="lname"><b>Contact Us</b></label>
+          @foreach($users as $usr)
+          @if($usr->id==$user->id)
+          <p>{{$usr->contact_no}}</p>
+          @endif
+              @endforeach
           <label for="lname"><b>Address</b></label>
-          <p>"Bay Area Francisco,CA"</p>
+          @foreach($users as $usr)
+          @if($usr->id==$user->id)
+          <p>{{$usr->address}}</p>
+          @endif
+              @endforeach
           <p><button class="btn btn-primary">Follow</button></p>
          </div>
         </diV>
@@ -77,7 +93,11 @@ body {
           <img  src="/assets/rabia/profile.jpg" class="rounded-circle" alt="John" style="width:80%">
           </div>
           <div class="card-body">
-            <h1>John Doe</h1>
+            <h1>@foreach($users as $usr)
+              @if($usr->id==$user->id)
+              <p>{{$usr->name}}</p>
+              @endif
+                  @endforeach</h1>
             <p class="title">CEO & Founder, Example</p>
             <p>Harvard University</p>
             <a href="#"><i class="fa fa-dribbble"></i></a>
@@ -95,6 +115,9 @@ body {
             @foreach($devices as $dev)
             @if($dev->user_id==$user->id)
             <label>{{$dev->device_name}}</label>
+            {{-- <label>{{$dev->status}}</label> --}}
+           
+            
             <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width:{{$dev->status}}% ;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{$dev->status}}</div>
               </div>

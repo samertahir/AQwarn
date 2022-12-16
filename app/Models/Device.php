@@ -11,5 +11,6 @@ class Device extends Model
 
     protected $fillable=['id','device_name','description','device_id','user_id','status'];
     
+ 
 
 }

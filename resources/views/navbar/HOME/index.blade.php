@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
       <div class="column"><h1>PURE & HEALTHY <br> Drinking WAter</h1></div>
-      <div class="column"> <img src="/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/double-bottle.png"></div>
+      <div class="column"> <img src="/assets/rabia/Uaques/double-bottle.png"></div>
         </div>
     </div>
 
@@ -130,7 +130,7 @@
         <img class="img-fluid max-width:100%" src="C:\Users\mugha\OneDrive\Pictures\Screenshots\2022-04-09.png">
     </div>
     <div class="container mt-5 mb-3 bg-primary">
-        <img src="/assets/rabia/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/service-men-1.png" style="width:100%;">
+        <img src="/assets/rabia/Uaques/service-men-1.png" style="width:100%;">
         <div class="centered">
        <h1 class="bg-warning">Bottled Water Delivery &</h1>
        <h1 class="bg-warning">Services</h1>

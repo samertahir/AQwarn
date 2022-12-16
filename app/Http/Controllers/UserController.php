@@ -32,4 +32,4 @@ class UserController extends Controller
     
        
     }
-}
+

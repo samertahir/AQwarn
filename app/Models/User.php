@@ -51,5 +51,17 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    // protected $append=['Device'];
 
-    }
+    // public function getDevicesNameAttribute()
+    // {
+    //   return Device::where('user_id', $this->id)->get();
+
+      
+    // }
+    
+
+    
+}
+
+    

@@ -41,7 +41,7 @@
 <link href="{{ asset ('/assets/rabia/Uaques/responsive.css')}}" rel="stylesheet">
 
 	<script src="{{ asset ('/assets/rabia/Uaques/bootstrap.bundle.js')}}" type="text/javascript" charset="utf-8" async defer></script>
-    <script src="{{ asset ('/assets/rabia/bootstrap.bundle.min.js')}}" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="{{ asset ('/assets/rabia/Uaques/bootstrap.bundle.min.js')}}" type="text/javascript" charset="utf-8" async defer></script>
 
 	<style>
 body {
@@ -130,20 +130,21 @@ body {
                                         </ul>
                                     </li>
                                     <li><a href="/contact">Contact</a></li>
-                                    <li class="dropdown "><a class="navbar-brand" href="/ourshop">
-                                        <img src="assets/rabia/Uaques/cart.png" alt="Avatar Logo" style="width:65px;" class="rounded-circle">
-
-                                        <span class="badge badge-info">
-
-                                        {{ getitems_count() }}
-                                    </span>
-                                      </a></li>
                                     <li class="dropdown"><a href="#"><i class="fa fa-arrow-circle-down" style="font-size:48px;color:primary"></i></a>
                                         <ul>
-                                            <li><a href="/devices">Profile</a></li>
+                                            <li><a href="/profile">Profile</a></li>
                                             <li><a href="video-layout.html">logout</a></li>
                                     </li>
-
+                                      <li class="dropdown  "><a class="navbar-brand" href="/ourshop">
+                                        <img src="assets/rabia/Uaques/cart.png" alt="Avatar Logo" style="width:65px;" class="rounded-circle">
+                                        {{-- <span>2</span>  --}}
+                                        <span class="badge badge-info">
+                                            {{-- @foreach ($cartitems as $cart)
+                                        {{ $cart->product_id}}
+                                        {{ $cart->user_id}}
+                                        {{ $cart->quantity }}
+                                        @endforeach --}}
+                                      </a></li>
                                 </ul>
                             </div>
                         </nav>

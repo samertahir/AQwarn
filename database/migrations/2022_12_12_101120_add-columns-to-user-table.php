@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDevicesTable extends Migration
+class AddColumnsToUserTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,8 @@ class CreateDevicesTable extends Migration
      */
     public function up()
     {
-        Schema::create('devices', function (Blueprint $table) {
-            $table->id();
-            $table->string('device_name');
-            $table->string('description');
-           
-            $table->timestamps();
+        Schema::table('users', function (Blueprint $table) {
+            $table->integer('device-id')->after('dob');
         });
     }
 
@@ -29,6 +25,6 @@ class CreateDevicesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('devices');
+        //
     }
 }
