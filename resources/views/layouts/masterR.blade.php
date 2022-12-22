@@ -45,7 +45,7 @@
 
 	<style>
 body {
-  background-image: url("/assets/rabia/Beautiful-Water-Drop-Wallpaper.webp");
+  background-image: url("/assets/rabia/Uaques/bgwater.jpeg");
   background-color: #cccccc;
 }
 </style>

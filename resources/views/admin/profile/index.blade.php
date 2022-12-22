@@ -93,18 +93,20 @@ body {
           <img  src="/assets/rabia/profile.jpg" class="rounded-circle" alt="John" style="width:80%">
           </div>
           <div class="card-body">
-            <h1>@foreach($users as $usr)
+            @foreach($users as $usr)
               @if($usr->id==$user->id)
-              <p>{{$usr->name}}</p>
+              <p><h1>{{$usr->name}}</h1></p>
               @endif
-                  @endforeach</h1>
+                  @endforeach
             <p class="title">CEO & Founder, Example</p>
             <p>Harvard University</p>
+            <ul class="info-box clearfix">
             <a href="#"><i class="fa fa-dribbble"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a></ul>
             <p><button class="btn btn-primary">Contact</button></p>
+            
           </div></div>
        </div>
         
@@ -129,7 +131,7 @@ body {
   </div>
 </div>
 @auth
-    <p>Only logged in users can view this</p>
+    
     <a href="/logout">Logout</a>
 @endauth
 </body>
