@@ -78,30 +78,28 @@
         <br>
 
 
+        <div class="container mt-5 mb-3 bg-light">
+            <div class="row text-center">
+            <h1>Bottles We Deliver</h1></div>
+            <br>
 
-        <div class="row text-center">
-            @foreach ($products as $pro )
-                <div class="col-sm-3">
+            <div class="row text-center">
+                @foreach ($products as $pro )
+                    <div class="col-sm-3">
 
-                <div class="card" style="">
-                    <div class="card-body">
-            <img src="{{ $pro->product_img }}">
-                    <h5 class="card-title " style="color:blue">{{ $pro->name }}</h5><br>
-                    <span class="badge rounded-pill bg-secondary">3*2L Bottles</span><br>
-                    <p class="card-text" >{{ $pro->discription }}</p>
-                    <h5 class="bg-warning">{{ $pro->price }}</h5><br>
-                    <a class="btn btn-primary " role="button" href="{{route('product.addcart',['pid'=>$pro->id]) }}">ADD TO CART</a>
+                    <div class="card" style="">
+                        <div class="card-body" >
+                <img src="{{ $pro->product_img }}">
+                        <h5 class="card-title " style="color:blue">{{ $pro->name }}</h5><br>
+                        <span class="badge rounded-pill bg-secondary">3*2L Bottles</span><br>
+                        <p class="card-text" >{{ $pro->discription }}</p>
+                        <h5 class="bg-warning">{{ $pro->price }}</h5><br>
+                        <a class="btn btn-primary " role="button" href="{{route('product.addcart',['pid'=>$pro->id]) }}">ADD TO CART</a>
 
+                    </div></div></div>
+                    @endforeach
 
-
-
-
-
-
-                </div></div></div>
-                @endforeach
-
-    </div>
+        </div>
     <br>
 
     </div>
