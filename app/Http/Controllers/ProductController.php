@@ -155,7 +155,9 @@ class ProductController extends Controller
         $cartitems=CartItems::where('user_id',$user_id)->count();
 
      }
-
+    // public function cart(){
+    //     $getCartItems=Cart::count();
+    // }
 
 
 }

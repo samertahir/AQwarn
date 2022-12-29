@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\CartItemsController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\OrderController;
@@ -176,7 +177,7 @@ use Illuminate\Support\Facades\Route;
 
 
    Auth ::routes();
-
+   Route::get("cartdetails",[CartItemsController::class,'index']);
 
       Route::get('/role',[App\Http\Controllers\HomeController::class,'index' ])->name('home');
     //Route::group(['middleware'=>['auth','admin']],function(){});
