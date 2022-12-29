@@ -45,7 +45,7 @@
 
 	<style>
 body {
-  background-image: url("/assets/rabia/Beautiful-Water-Drop-Wallpaper.webp");
+  background-image: url("/assets/rabia/Uaques/bgwater.jpeg");
   background-color: #cccccc;
 }
 </style>
@@ -76,7 +76,18 @@ body {
 
 <nav class="navbar bg-light navbar-light  navbar-expand-sm mt-1 sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="" ><b>AQwarn</b></a>
+        <div class="p-5 text-center bg-light">
+       {{-- <img src="/assets/rabia/Uaques/logo.png" alt=""><h1 class="text-left">AQwarn</h1> --}}
+       <h1 class="mb-3">
+        <img src="/assets/rabia/Uaques/logo.png"
+             height="10"
+             alt="AQwarn Logo">
+             <span class="">AQwarn</span>
+            
+    </h1>
+    </div>
+
+        {{-- <a class="navbar-brand" href=""  ><b>AQwarn</b></a> --}}
   <!--  <ul class="navbar-nav ">
         <li class="nav-item"><a class="nav-link" href="" title="">HOME</a></li>
         <li class="nav-item"><a class="nav-link" href="" title="">PAGES</a></li>
@@ -191,7 +202,7 @@ body {
                 <div class="row clearfix">
                     <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                         <div class="logo-widget footer-widget">
-                            <figure class="footer-logo"><a href="index.html"><img src="/FYP/Uaques - Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/footer-logo.png" alt=""></a>--><h3 class="bg-warning">AQwarn</h3></figure>
+                            <figure class="footer-logo"><img src="/assets/rabia/Uaques/logo.png" alt=""> <span class="text text-white"><i>AQwarn</i></span></figure>
                             <div class="text">AQwarn the automatic system with smart sensor, which will sense the water level and generate an alert via web Application. The user does not need to monitor the water level, this automatic system have the ability to transfer data without human interaction through a network. </div>
                         </div>
                     </div>
