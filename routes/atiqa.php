@@ -177,6 +177,7 @@ use Illuminate\Support\Facades\Route;
 
 
    Auth ::routes();
+   //cartitems
    Route::get("cartdetails",[CartItemsController::class,'index']);
 
       Route::get('/role',[App\Http\Controllers\HomeController::class,'index' ])->name('home');
