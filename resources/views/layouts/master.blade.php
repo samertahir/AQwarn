@@ -21,13 +21,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <!-- CSRF Token -->
    <meta name="csrf-token" content="{{ csrf_token() }}">
-  <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('./assets/img/apple-icon.png') }}">
-  <link rel="icon" type="image/png" href="{{ asset('./assets/img/favicon.png') }}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets/img/apple-icon.png') }}">
+  <link rel="icon" type="image/png" href="{{ asset('assets/img/favicon.png') }}">
   <title>
     Material Dashboard 2 by Creative Tim
   </title>
   <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="{{ asset('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" ') }}"/>
+  <link rel="stylesheet" type="text/css" href="{{ asset('https://fonts/googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" ') }}"/>
   <!-- Nucleo Icons -->
   <link href="{{ asset('assets/css/nucleo-icons.css') }}" rel="stylesheet" />
   <link href="{{ asset('assets/css/nucleo-svg.css') }}" rel="stylesheet" />
@@ -48,8 +48,8 @@
         <span class="ms-1 font-weight-bold text-white">Material Dashboard 2</span>
       </a>
     </div>
-    <hr class="horizontal light mt-0 mb-2">
-    <div class="collapse navbar-collapse  w-auto  max-height-vh-100" id="sidenav-collapse-main">
+
+    {{-- <div class="collapse navbar-collapse  w-auto  max-height-vh-100" id="sidenav-collapse-main"> --}}
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link text-white active bg-gradient-primary" href="./pages/dashboard.html">
@@ -78,7 +78,7 @@
         <li class="nav-item">
           <a class="nav-link text-white " href="/admin/user">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">view_in_ar</i>
+                <i class="fas fa-users"></i>
             </div>
             <span class="nav-link-text ms-1">User</span>
           </a>
@@ -94,7 +94,7 @@
         <li class="nav-item">
           <a class="nav-link text-white " href="/admin/reports">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">notifications</i>
+                <i class="fas fa-chart-line"></i>
             </div>
             <span class="nav-link-text ms-1">Reports</span>
           </a>
@@ -102,7 +102,7 @@
         <li class="nav-item">
             <a class="nav-link text-white " href="/admin/stock">
               <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="material-icons opacity-10">notifications</i>
+                <i class="fas fa-layer-group"></i>
               </div>
               <span class="nav-link-text ms-1">Stock</span>
             </a>
@@ -110,7 +110,7 @@
           <li class="nav-item">
             <a class="nav-link text-white " href="/admin/role">
               <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="material-icons opacity-10">notifications</i>
+                <i class="fas fa-user-cog"></i>
               </div>
               <span class="nav-link-text ms-1">Role</span>
             </a>
@@ -118,7 +118,7 @@
           <li class="nav-item">
             <a class="nav-link text-white " href="/admin/location">
               <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="material-icons opacity-10">notifications</i>
+                <i class="fad fa-location"></i>
               </div>
               <span class="nav-link-text ms-1">Location</span>
             </a>
@@ -134,7 +134,7 @@
           <li class="nav-item">
             <a class="nav-link text-white " href="/admin/city">
               <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="material-icons opacity-10">notifications</i>
+                <i class="fas fa-city"></i>
               </div>
               <span class="nav-link-text ms-1">City</span>
             </a>
@@ -142,7 +142,7 @@
           <li class="nav-item">
             <a class="nav-link text-white " href="/admin/street">
               <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="material-icons opacity-10">notifications</i>
+                <i class="fas fa-street-view"></i>
               </div>
               <span class="nav-link-text ms-1">Street</span>
             </a>
@@ -150,7 +150,7 @@
           <li class="nav-item">
             <a class="nav-link text-white " href="/admin/feedback">
               <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="material-icons opacity-10">notifications</i>
+                <i class="fad fa-comment-alt-lines"></i>
               </div>
               <span class="nav-link-text ms-1">Feedback</span>
             </a>
@@ -184,11 +184,7 @@
         </li>
       </ul>
     </div>
-    <div class="sidenav-footer position-absolute w-100 bottom-0 ">
-      <div class="mx-3">
-        <a class="btn bg-gradient-primary mt-4 w-100" href="{{ asset('https://www.creative-tim.com/product/material-dashboard-pro?ref=sidebarfree') }}" type="button">Upgrade to pro</a>
-      </div>
-    </div>
+
   </aside>
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
     <!-- Navbar -->
@@ -720,7 +716,7 @@
 
 
   <script type="module">
-    
+
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
     // TODO: Add SDKs for Firebase products that you want to use
