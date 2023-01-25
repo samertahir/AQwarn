@@ -45,7 +45,7 @@
       <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
       <a class="navbar-brand m-0" href=" {{ asset('https://demos.creative-tim.com/material-dashboard/pages/dashboard ') }}" target="_blank">
         <img src="{{ asset('assets/img/logo-ct.png') }}" class="navbar-brand-img h-100" alt="main_logo">
-        <span class="ms-1 font-weight-bold text-white">Material Dashboard 2</span>
+        <span class="ms-1 font-weight-bold text-white">Dashboard</span>
       </a>
     </div>
 
@@ -70,7 +70,7 @@
         <li class="nav-item">
           <a class="nav-link text-white " href="/admin/category">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">receipt_long</i>
+                <i class="fa fa-cubes" aria-hidden="true"></i>
             </div>
             <span class="nav-link-text ms-1">Categories</span>
           </a>
@@ -86,7 +86,8 @@
         <li class="nav-item">
           <a class="nav-link text-white " href="/admin/order">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">format_textdirection_r_to_l</i>
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+
             </div>
             <span class="nav-link-text ms-1">Order</span>
           </a>
@@ -118,7 +119,7 @@
           <li class="nav-item">
             <a class="nav-link text-white " href="/admin/location">
               <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="fad fa-location"></i>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
               </div>
               <span class="nav-link-text ms-1">Location</span>
             </a>
@@ -126,7 +127,7 @@
           <li class="nav-item">
             <a class="nav-link text-white " href="/admin/province">
               <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="material-icons opacity-10">notifications</i>
+                <i class="fa fa-map-signs" aria-hidden="true"></i>
               </div>
               <span class="nav-link-text ms-1">Province</span>
             </a>
@@ -150,38 +151,12 @@
           <li class="nav-item">
             <a class="nav-link text-white " href="/admin/feedback">
               <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="fad fa-comment-alt-lines"></i>
+                <i class="fa fa-comments-o" aria-hidden="true"></i>
               </div>
               <span class="nav-link-text ms-1">Feedback</span>
             </a>
           </li>
-        <li class="nav-item mt-3">
-          <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Account pages</h6>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white " href=".//admin/feedback.html">
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">person</i>
-            </div>
-            <span class="nav-link-text ms-1">Profile</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white " href="./pages/sign-in.html">
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">login</i>
-            </div>
-            <span class="nav-link-text ms-1">Sign In</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white " href="./pages/sign-up.html">
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">assignment</i>
-            </div>
-            <span class="nav-link-text ms-1">Sign Up</span>
-          </a>
-        </li>
+
       </ul>
     </div>
 
