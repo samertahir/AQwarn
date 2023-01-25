@@ -41,7 +41,7 @@
                       <td class="align-middle text-center">
                         <button class="btn btn-primary">+</button></td>
                       <td class="align-middle text-center">
-                        <button class="btn btn-primary">DEL</button></td>
+                        <button class="btn btn-danger">DEL</button></td>
                         {{-- <a href="{{ route('product.edit',['id'=>$pro->id]) }}" class="btn btn-primary btn-sm">Edit</a></td> --}}
                     </tr>
                     @endforeach

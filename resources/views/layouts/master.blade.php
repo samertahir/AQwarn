@@ -182,15 +182,19 @@
           </div>
      <div>
                 @guest
+
                             @if (Route::has('login'))
 
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
 
                             @endif
                             @else
+
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
+
+                                  <i class="fa fa-user me-sm-1"></i>
+                                  {{ Auth::user()->name }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end btn btn-primary btn-sm" aria-labelledby="navbarDropdown">
@@ -211,7 +215,7 @@
 
 
 
-          <ul class="navbar-nav  justify-content-end">
+          {{-- <ul class="navbar-nav  justify-content-end">
             <li class="nav-item d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
                 <i class="fa fa-user me-sm-1"></i>
@@ -219,8 +223,8 @@
 
 
               </a>
-            </li>
-            <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+            </li> --}}
+            {{-- <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
                 <div class="sidenav-toggler-inner">
                   <i class="sidenav-toggler-line"></i>
@@ -237,7 +241,7 @@
             <li class="nav-item dropdown pe-2 d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-body p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa fa-bell cursor-pointer"></i>
-              </a>
+              </a> --}}
               <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton">
                 <li class="mb-2">
                   <a class="dropdown-item border-radius-md" href="javascript:;">
@@ -313,7 +317,7 @@
     </nav>
     @yield('content')
     <!-- End Navbar -->
-    <div class="container-fluid py-4">
+    {{-- <div class="container-fluid py-4">
 
       <footer class="footer py-4  ">
         <div class="container-fluid">
@@ -347,7 +351,7 @@
           </div>
         </div>
       </footer>
-    </div>
+    </div> --}}
   </main>
   <div class="fixed-plugin">
     <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
