@@ -37,13 +37,16 @@
                       <td>{{$cart->discount}}</td>
 
                       <td class="align-middle text-center">
-                        <button class="btn btn-primary">-</button></td>
+                        <a href="" class="btn btn-primary btn-sm">-</a></td>
                       <td class="align-middle text-center">
-                        <button class="btn btn-primary">+</button></td>
+                        <a href="" class="btn btn-primary btn-sm">+</a>
+                        </td>
                       <td class="align-middle text-center">
-                        <button class="btn btn-danger">DEL</button></td>
-                        {{-- <a href="{{ route('product.edit',['id'=>$pro->id]) }}" class="btn btn-primary btn-sm">Edit</a></td> --}}
-                    </tr>
+                        {{-- <button class="btn btn-danger">DEL</button> --}}
+                        {{-- <a href="{{ route('cartitemsdetails.index',['user_id'=>$user_id]) }}" class="btn btn-danger btn-sm">DEL</a></td> --}}
+
+                    </td>
+                </tr>
                     @endforeach
                 </tbody>
             </table>

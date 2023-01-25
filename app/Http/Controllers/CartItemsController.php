@@ -21,16 +21,36 @@ class CartItemsController extends Controller
         return view('navbar.CART.cartdetails',compact('cartitems'));
 
     }
-    // public function delete($id)
-    // {
-    //     $user_id=auth()->user()->id;
-    //     $cartitems_id=CartItems::find($id);
-    //     $cartitems=CartItems::where('user_id',$user_id,$cartitems_id);
+    public function delete($id)
+    {
+        $user_id=auth()->user()->id;
+        $cartitems_id=CartItems::find($id);
+        $cartitems=CartItems::where('user_id',$user_id)->where('cartitems_id',$cartitems_id);
 
 
-    //     $cartitems->delete();
-    //     return redirect()->back();
-    // }
+        $cartitems->delete();
+        return redirect()->back();
+    }
+    public function increment($id)
+    {
+        $user_id=auth()->user()->id;
+        $cartitems_id=CartItems::find($id);
+        $cartitems=CartItems::where('user_id',$user_id)->where('cartitems_id',$cartitems_id);
 
+
+
+        return redirect()->back();
+    }
+
+    public function decrement($id)
+    {
+        $user_id=auth()->user()->id;
+        $cartitems_id=CartItems::find($id);
+        $cartitems=CartItems::where('user_id',$user_id)->where('cartitems_id',$cartitems_id);
+
+
+
+        return redirect()->back();
+    }
 
 }

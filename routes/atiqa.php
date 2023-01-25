@@ -188,6 +188,9 @@ use Illuminate\Support\Facades\Route;
    Auth ::routes();
    //cartitems
    Route::get("cartdetails",[CartItemsController::class,'index']);
+   Route::get("cartdetails",[CartItemsController::class,'delete']);
+   Route::get("cartdetails",[CartItemsController::class,'increment']);
+   Route::get("cartdetails",[CartItemsController::class,'decrement']);
 
       Route::get('/role',[App\Http\Controllers\HomeController::class,'index' ])->name('home');
     //Route::group(['middleware'=>['auth','admin']],function(){});
