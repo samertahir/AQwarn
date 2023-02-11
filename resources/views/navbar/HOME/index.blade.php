@@ -94,7 +94,7 @@
                         <span class="badge rounded-pill bg-secondary">3*2L Bottles</span><br>
                         <p class="card-text" >{{ $pro->discription }}</p>
                         <h5 class="bg-warning">{{ $pro->price }}</h5><br>
-                        <a class="btn btn-primary " role="button" href="{{route('product.addcart',['pid'=>$pro->id]) }}">ADD TO CART</a>
+                        <a class="btn btn-primary " role="button" href="{{route('cart.addcart',['pid'=>$pro->id]) }}">ADD TO CART</a>
 
                     </div></div></div>
                     @endforeach
@@ -265,14 +265,14 @@
     						<div class="col-lg"><img src="http://azim.commonsupport.com/Uaques/images/clients/client-5.png"></div>
     						<div class="col-lg"><img src="http://azim.commonsupport.com/Uaques/images/clients/client-1.png"></div>
     						<div class="col-lg"><img src="http://azim.commonsupport.com/Uaques/images/clients/client-2.png"></div>
-    			
+
     					</div>
 
     				</div>
     			</div>
-    			
+
     		</div>
-    		
+
     	</div>
     </section>
     <!-- clients-section end -->

@@ -33,18 +33,20 @@
                       <td><img src="{{$cart->product_img}}"></td>
                       <td>{!! isset($cart)? $cart-> description:'' !!}</td>
                       <td>{{$cart->price}}</td>
-                      <td>{{$cart->quantity_in_hand}}</td>
+                      <td>{{$cart->quantity}}</td>
                       <td>{{$cart->discount}}</td>
 
                       <td class="align-middle text-center">
-                        <a href="" class="btn btn-primary btn-sm">-</a></td>
+                        <a href="{{'decrement/'.$cart->id}}" class="btn btn-primary btn-sm">-</a></td>
                       <td class="align-middle text-center">
-                        <a href="" class="btn btn-primary btn-sm">+</a>
+                        {{-- <a href="" class="btn btn-primary btn-sm">+</a> --}}
+                        <a href="{{'increment/'.$cart->id}} " class="btn btn-primary btn-sm">+</a>
+                        {{-- <a href="{{ route('cartdetail.increment',['id'=>$cart->id]) }}" class="btn btn-primary btn-sm">+</a> --}}
                         </td>
                       <td class="align-middle text-center">
                         {{-- <button class="btn btn-danger">DEL</button> --}}
-                        {{-- <a href="{{ route('cartitemsdetails.index',['user_id'=>$user_id]) }}" class="btn btn-danger btn-sm">DEL</a></td> --}}
-
+                        <a href="{{ 'delete/'.$cart->user_id.$cart->id }}" class="btn btn-danger btn-sm">DEL</a></td>
+                        {{-- <a href="{{ route('cartdetail.delete',['id'=>$cart->user_id],['id'=>$cart->id]) }}" class="btn btn-danger btn-sm">DEL</a></td> --}}
                     </td>
                 </tr>
                     @endforeach

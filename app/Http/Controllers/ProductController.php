@@ -96,65 +96,53 @@ class ProductController extends Controller
         return redirect()->route('product.index');
     }
 
-    public function cartitems()
-    {
-        $cartitems=CartItems::get();
-        return view('layouts.masterR',compact('cartitems'));
+    // public function cartitems()
+    // {
+    //     $cartitems=CartItems::get();
+    //     return view('layouts.masterR',compact('cartitems'));
 
-    }
+    // }
 
-    public function add($pid)
+    // public function add($pid)
 
-    {
+    // {
 
-        $user_id=auth()->user()->id;
-        //$order_total=0;
-        //$discount_rate=0;
-        //$address=auth()->user()->address;
+    //     $user_id=auth()->user()->id;
 
-        $products =Product::find($pid);
+    //     $products =Product::find($pid);
 
-        if(!$products){
-            abort(404);
-        }
-        // $oldcart=User::has('login')? User::get('cart'): null;
-        // $cart = new Cart();
-        // $cart->user_id = $user;
-        // $cart->order_total =$order_total;
-        // $cart->discount_rate = $discount_rate;
-        // $cart->address = 'dfdg';
-        // $cart->save();
+    //     if(!$products){
+    //         abort(404);
+    //     }
 
-        //  $cart_id=$cart;
-        //  $product_price=0;
-         $quantity=1;
+    //      $quantity=1;
 
-        $items=CartItems::where('user_id',$user_id)->where('product_id',$pid)->first();
-        if($items!=null){
+    //     $items=CartItems::where('user_id',$user_id)->where('product_id',$pid)->first();
+    //     if($items!=null){
 
-        $items->increment('quantity');
-        return redirect()->back();
+    //     $items->increment('quantity');
+    //     return redirect()->back();
 
 
-        }
+    //     }
 
-    else{
-        $cartitems = new CartItems();
-        $cartitems->product_id= $pid;
-        $cartitems->user_id = $user_id;
-        $cartitems->quantity=$quantity;
+    // else{
+    //     $cartitems = new CartItems();
+    //     $cartitems->product_id= $pid;
+    //     $cartitems->user_id = $user_id;
+    //     $cartitems->quantity=$quantity;
 
-        $cartitems->save();
-        return redirect()->back();
+    //     $cartitems->save();
+    //     return redirect()->back();
 
-    }
+    // }
 
-    }
-     public function count(){
-        $user_id=auth()->user()->id;
-        $cartitems=CartItems::where('user_id',$user_id)->count();
+    // }
+    //  public function count(){
+    //     $user_id=auth()->user()->id;
+    //     $cartitems=CartItems::where('user_id',$user_id)->count();
 
-     }
+    //  }
 
 
 

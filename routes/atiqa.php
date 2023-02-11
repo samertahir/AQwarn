@@ -36,7 +36,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-         Route::get('/addCart/{pid}',[ProductController::class,'add'])->name('product.addcart');
+         Route::get('/addCart/{pid}',[CartItemsController::class,'add'])->name('cart.addcart');
          Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function(){
 
              // Admin Route Group
@@ -188,9 +188,9 @@ use Illuminate\Support\Facades\Route;
    Auth ::routes();
    //cartitems
    Route::get("cartdetails",[CartItemsController::class,'index']);
-   Route::get("cartdetails",[CartItemsController::class,'delete']);
-   Route::get("cartdetails",[CartItemsController::class,'increment']);
-   Route::get("cartdetails",[CartItemsController::class,'decrement']);
+   Route::get("delete/{id}",[CartItemsController::class,'delete']);
+   Route::get("increment/{id}",[CartItemsController::class,'increment']);
+   Route::get("decrement/{id}",[CartItemsController::class,'decrement']);
 
       Route::get('/role',[App\Http\Controllers\HomeController::class,'index' ])->name('home');
     //Route::group(['middleware'=>['auth','admin']],function(){});
