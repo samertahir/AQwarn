@@ -80,10 +80,10 @@ class CartItemsController extends Controller
         $user_id=auth()->user()->id;
         // $cartitems_id=CartItems::find($id);
         // $cartitems=CartItems::where('user_id',$user_id)->where('id',$id);
-
-         $cartitems=CartItems::where('user_id',$user_id)->where('id',$id)->delete();
         // return $cartitems;
-        // $cartitems->delete();
+         $cartitems=CartItems::where('user_id',$user_id)->where('id',$id)->first();
+        //  return $cartitems;
+         $cartitems->delete();
         return redirect('/cartdetails');
 
         // return redirect()->route('cartitemsdetail.delete');
@@ -92,22 +92,42 @@ class CartItemsController extends Controller
     public function increment($id)
     {
 
-         $cartitems_id=CartItems::find($id);
+          $cartitems_id=CartItems::find($id);
+        //  $quantity_inc=$cartitems_id->quantity+1;
+          $quantity_inc=$cartitems_id->quantity;
 
-        //  $quantity=CartItems::where('quantity',$quantity)->get();
-         $quantity_inc=$cartitems_id->quantity+1;
-         $cartitems_id->update(['quantity'=>$quantity_inc]);
+        // get quantity_in_hand in next line
+         $quantity_in_hand=$cartitems_id->quantity_in_hand;
+        //  return $quantity_in_hand;
+        // condition for quantity
+           if($quantity_in_hand>=$quantity_inc){
+        //     // $cartitems_id->update(['quantity'=>$quantity_inc]);
+              $cartitems_id->increment('quantity');
+             return redirect('/cartdetails');
+         }
+         else
+          return ('Not Found');
+
+        //  return $quantity_in_hand;
+
          //  return $cartitems_id;
-        return redirect('/cartdetails');
+        //  return redirect('/cartdetails');
+
     }
 
     public function decrement($id)
      {
-        $cartitems_id=CartItems::find($id);
-        $quantity_dec=$cartitems_id->quantity-1;
-        $cartitems_id->update(['quantity'=>$quantity_dec]);
+         $cartitems_id=CartItems::find($id);
+        // $quantity_dec=$cartitems_id->quantity-1;
+        // $cartitems_id->update(['quantity'=>$quantity_dec]);
+        $quantity_dec=$cartitems_id->quantity;
+         if($quantity_dec>1){
+            $cartitems_id->decrement('quantity');
+         return redirect('/cartdetails');
+        }
+        return ('Not Found');
 
-       return redirect('/cartdetails');
+
    }
 
 

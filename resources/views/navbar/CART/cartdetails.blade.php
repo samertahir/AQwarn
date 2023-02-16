@@ -45,7 +45,7 @@
                         </td>
                       <td class="align-middle text-center">
                         {{-- <button class="btn btn-danger">DEL</button> --}}
-                        <a href="{{ 'delete/'.$cart->user_id.$cart->id }}" class="btn btn-danger btn-sm">DEL</a></td>
+                        <a href="{{ 'delete/'.$cart->id }}" class="btn btn-danger btn-sm">DEL</a></td>
                         {{-- <a href="{{ route('cartdetail.delete',['id'=>$cart->user_id],['id'=>$cart->id]) }}" class="btn btn-danger btn-sm">DEL</a></td> --}}
                     </td>
                 </tr>
