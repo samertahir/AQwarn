@@ -192,6 +192,7 @@ use Illuminate\Support\Facades\Route;
    Route::get("increment/{id}",[CartItemsController::class,'increment']);
    Route::get("decrement/{id}",[CartItemsController::class,'decrement']);
 
+
       Route::get('/role',[App\Http\Controllers\HomeController::class,'index' ])->name('home');
     //Route::group(['middleware'=>['auth','admin']],function(){});
    // Route::middleware([])->group(['prefix'=>'admin'])

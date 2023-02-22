@@ -18,6 +18,8 @@ class CreateOrdersTable extends Migration
             $table->integer('order_total');
             $table->integer('discount_rate');
             $table->string('address');
+            $table->integer('user_id');
+            $table->enum('status', ['Place', 'Process', 'deliver','Cancel'])->default('Place');
             $table->timestamps();
         });
     }

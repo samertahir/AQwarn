@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\CartItems;
 use App\Models\Product;
+use GrahamCampbell\ResultType\Success;
 use Illuminate\Http\Request;
 
 class CartItemsController extends Controller
@@ -103,10 +104,10 @@ class CartItemsController extends Controller
            if($quantity_in_hand>=$quantity_inc){
         //     // $cartitems_id->update(['quantity'=>$quantity_inc]);
               $cartitems_id->increment('quantity');
-             return redirect('/cartdetails');
+             return redirect()->back()->with('success','Success!');
          }
-         else
-          return ('Not Found');
+          else
+         return redirect()->back()->with('failed','Failed!');
 
         //  return $quantity_in_hand;
 
@@ -123,9 +124,10 @@ class CartItemsController extends Controller
         $quantity_dec=$cartitems_id->quantity;
          if($quantity_dec>1){
             $cartitems_id->decrement('quantity');
-         return redirect('/cartdetails');
+         return redirect()->back()->with('success','Success!');
         }
-        return ('Not Found');
+        else
+        return redirect()->back()->with('failed','Failed!');
 
 
    }

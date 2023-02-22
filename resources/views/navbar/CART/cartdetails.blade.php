@@ -6,10 +6,30 @@
         <div class="card-header">
 
             <h4>Cart Details</h4>
+            <a href="shopdeliveryform" class="btn btn-success btn-sm">Place Order</a>
+
 
         </div>
 
         <div class="card-body px-0 pb-2">
+
+            <div>
+                @if(session('success'))
+                <div class="alert alert-sucess alert-block">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                        <strong>{{ session('success') }}</strong>
+                </div>
+                @endif
+                @if(session('failed'))
+                <div class="alert alert-danger">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                            <strong> {{ session('failed') }}</strong>
+
+                </div>
+                @endif
+            </div>
+
+
             <div class="table-responsive p-0">
               <table class="table align-items-center justify-content-center mb-0">
                 <thead>
@@ -37,11 +57,14 @@
                       <td>{{$cart->discount}}</td>
 
                       <td class="align-middle text-center">
-                        <a href="{{'decrement/'.$cart->id}}" class="btn btn-primary btn-sm">-</a></td>
+                        <a href="{{'decrement/'.$cart->id}}" class="btn btn-primary btn-sm">-</a>
+
+                    </td>
                       <td class="align-middle text-center">
                         {{-- <a href="" class="btn btn-primary btn-sm">+</a> --}}
                         <a href="{{'increment/'.$cart->id}} " class="btn btn-primary btn-sm">+</a>
                         {{-- <a href="{{ route('cartdetail.increment',['id'=>$cart->id]) }}" class="btn btn-primary btn-sm">+</a> --}}
+
                         </td>
                       <td class="align-middle text-center">
                         {{-- <button class="btn btn-danger">DEL</button> --}}
@@ -53,6 +76,7 @@
                 </tbody>
             </table>
           </div>
+
         </div>
       </div>
     </div>

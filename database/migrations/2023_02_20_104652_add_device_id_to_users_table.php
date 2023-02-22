@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddUserIdToOrdersTable extends Migration
+class AddDeviceIdToUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class AddUserIdToOrdersTable extends Migration
      */
     public function up()
     {
-        Schema::table('orders', function (Blueprint $table) {
-            $table->integer('user_id');
+        Schema::table('users', function (Blueprint $table) {
+            $table->integer('device_id');
         });
     }
 
@@ -25,8 +25,8 @@ class AddUserIdToOrdersTable extends Migration
      */
     public function down()
     {
-        Schema::table('orders', function (Blueprint $table) {
-            $table->dropColumn('user_id');
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('device_id');
         });
     }
 }

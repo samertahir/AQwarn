@@ -27,7 +27,7 @@ class CreateUsersTable extends Migration
             $table->integer('location_id');
             $table->integer('province_id');
             $table->integer('role_id')->default('1');
-            $table->integer('devie_id');
+
             $table->timestamp('email_verified_at')->nullable();
             $table->foreign('user_id')->references('user_id')->on('devices');
             $table->rememberToken();
