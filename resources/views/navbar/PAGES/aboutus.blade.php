@@ -28,6 +28,7 @@
 <link href="C:\wamp64\AQwarn\public\assets\rabia\Uaques -aboutUs Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/responsive.css" rel="stylesheet">
 </head>
 <body>
+    <?php include 'masterR.php'?>
  <!--Page Title-->
     <section class="page-title centred" style="background-image: url(	http://azim.commonsupport.com/Uaques/images/background/page-title.jpg);">
         <div class="auto-container">
@@ -387,7 +388,7 @@ body {
             <label>{{$dev->device_name}}</label>
             {{-- <label>{{$dev->status}}</label> --}}
            
-            
+{{--             
             <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width:{{$dev->status}}% ;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{$dev->status}}</div>
               </div>

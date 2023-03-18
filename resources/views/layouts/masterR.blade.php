@@ -50,13 +50,13 @@ body {
 }
 </style>
 </head>
-
+<body class="boxed_wrapper">
 <header class="main-header style-two">
  <!-- header-top -->
  <div class="header-top">
     <div class="auto-container clearfix">
         <div class="top-left pull-left">
-            <ul class="info-box clearfix">
+            <ul class="info-box clearfix"> 
                 <li><i class="fas fa-phone"></i>For Orders <a href="tel:8120703692" class="phone">812-070-3692</a></li>
                 <li><i class="far fa-envelope-open"></i><a href="mailto:donations@example.org">donations@example.org</a></li>
                 <li><i class="far fa-clock"></i>Monday to Friday 9am to 5pm</li>
@@ -75,35 +75,18 @@ body {
 
 
 <nav class="navbar bg-light navbar-light  navbar-expand-sm mt-1 sticky-top">
+    <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
     <div class="container">
         <div class="p-5 text-center bg-light">
-       {{-- <img src="/assets/rabia/Uaques/logo.png" alt=""><h1 class="text-left">AQwarn</h1> --}}
        <h1 class="mb-3">
         <img src="/assets/rabia/Uaques/logo.png"
              height="10"
              alt="AQwarn Logo">
-             <span class="">AQwarn</span>
-            
-    </h1>
+             <span class="">AQwarn</span></h1>
     </div>
 
-        {{-- <a class="navbar-brand" href=""  ><b>AQwarn</b></a> --}}
-  <!--  <ul class="navbar-nav ">
-        <li class="nav-item"><a class="nav-link" href="" title="">HOME</a></li>
-        <li class="nav-item"><a class="nav-link" href="" title="">PAGES</a></li>
-        <li class="nav-item"><a class="nav-link" href="" title="">SHOP</a></li>
-        <li class="nav-item"><a class="nav-link" href="" title="">ELEMENT</a></li>
-        <li class="nav-item"><a class="nav-link" href="" title="">CONTACT</a></li>
-        <li class="nav-item"><a class="nav-link" href="" title="">CART</a></li>
-    </ul><-->
-   <!-- <div class="outer-container">
-        <div class="auto-container">
-            <div class="header-upper clearfix">
-                <div class="upper-left pull-left clearfix">
-                    <figure class="logo-box"><a href="index.html"><img src="http://azim.commonsupport.com/Uaques/images/logo.png" alt=""></a></figure>
-                </div><-->
-        <nav class="main-menu navbar-expand-md navbar-light sticky-top">
-                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+        <div class="main-menu">
+                            
                                 <ul class="navigation clearfix">
                                     <li class="current dropdown"><a href="/home">Home</a>
                                     </li>
@@ -125,14 +108,14 @@ body {
                                     </li>
                                     <li class="dropdown"><a href="#">Element</a>
                                         <ul>
-                                            <li><a href="feature-layout.html">Feature Layout</a></li>
-                                            <li><a href="video-layout.html">Video Layout</a></li>
-                                            <li><a href="info-layout.html">Info Layout</a></li>
-                                            <li><a href="counter-layout.html">Counter Layout</a></li>
-                                            <li><a href="filtration-layout.html">Filtration Layout</a></li>
-                                            <li><a href="ourmission-layout.html">Our Mission Layout</a></li>
-                                            <li><a href="service-layout-1.html">Service Layout 01</a></li>
-                                            <li><a href="service-layout-2.html">Service Layout 02</a></li>
+                                            <li><a href="/feature layout">Feature Layout</a></li>
+                                            <li><a href="/video">Video Layout</a></li>
+                                            <li><a href="/information layout">Info Layout</a></li>
+                                            <li><a href="/counter">Counter Layout</a></li>
+                                            <li><a href="/filteration">Filtration Layout</a></li>
+                                            <li><a href="/our mission layout">Our Mission Layout</a></li>
+                                            <li><a href="/service 01">Service Layout 01</a></li>
+                                            <li><a href="/service 02">Service Layout 02</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown"><a href="#">Blog</a>
@@ -141,29 +124,39 @@ body {
                                         </ul>
                                     </li>
                                     <li><a href="/contact">Contact</a></li>
-                                    <li class="dropdown "><a class="navbar-brand" href="/cartdetails">
-                                        <img src="assets/rabia/Uaques/cart.png" alt="Avatar Logo" style="width:65px;" class="rounded-circle">
+                                    <li class="dropdown "><a class="navbar-brand" href="/cartdetails"><i class="fa fa-cart-arrow-down" style="font-size:30px;color:primary"></i>
+                                        {{-- <img src="assets/rabia/Uaques/cart.png" alt="Avatar Logo" style="width:65px;" class="rounded-circle"> --}}
 
                                         <span class="badge badge-info">
 
                                         {{ getitems_count() }}
                                     </span>
                                       </a></li>
-                                    <li class="dropdown"><a href="#"><i class="fa fa-arrow-circle-down" style="font-size:48px;color:primary"></i></a>
-                                        <ul>
-                                            <li><a href="/devices">Profile</a></li>
-                                            <li><a href="video-layout.html">logout</a></li>
+                                    <li class="dropdown"><a href="/profile"><i class="fa fa-user" style="font-size:30px;color:primary"></i></a>
+                                       
                                     </li>
-                                </ul>
                             </div>
-                        </nav>
+                        </div>
                     </div>
 
                 </div>
             </div>
         </div>
+        
     </nav>
-
+       <!--sticky Header-->
+       <div class="sticky-header">
+        <div class="auto-container clearfix">
+            <figure class="logo-box"><a href="index.html"><img src="images/small-logo.png" alt=""></a></figure>
+            <div class="menu-area">
+                <nav class="main-menu clearfix">
+                    <!--Keep This Empty / Menu will come through Javascript-->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- main-header end -->
 @yield('content')
 
 
@@ -257,7 +250,18 @@ body {
 </footer>
 <!-- main-footer end -->
 
+<!-- jequery plugins -->
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/validation.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/scrollbar.js"></script>
 
+<!-- main-js -->
+<script src="js/script.js"></script>
 
 </body>
 </html>

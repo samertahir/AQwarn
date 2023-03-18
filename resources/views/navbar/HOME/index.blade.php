@@ -1,7 +1,6 @@
 @extends('layouts.masterR')
 @section('content')
-<h1 style="text-align: center;" >A Trusted Name In
-    <br>Bottled Water Industry</h1>
+
     <br>
     <div class="container">
         <div class="row">
@@ -72,13 +71,10 @@
 
 
 
-    <div class="container mt-5 mb-3 bg-light">
-        <div class="row text-center">
-        <h1>Bottles We Deliver</h1></div>
-        <br>
+  
 
 
-        <div class="container mt-5 mb-3 bg-light">
+        <div class="container-fluid mt-5 mb-3 bg-light">
             <div class="row text-center">
             <h1>Bottles We Deliver</h1></div>
             <br>
@@ -103,7 +99,7 @@
     <br>
 
     </div>
-    <div class="container">
+    <div class="container-fluid">
     <h1 class="text-center mt-5 mb-3  ">Helping TO Improve</h1>
     <div class="row">
         <div class="col-lg">
@@ -251,9 +247,9 @@
         <!-- info-section end -->
         <!-- clients-section  -->
     <section class="clients-section">
-    	<div class="auto-container mt-5 mb-3">
+    	<div class="auto-container-fluid mt-5 mb-3">
 
-    		<div class="card">
+    		<div class="card ">
     			<div class="card-body">
     				<div class="card-title">
     					<h1 class="text-center">Trusted Partners</h1>

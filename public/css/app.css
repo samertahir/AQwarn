@@ -10271,3 +10271,17 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* @media only screen and (max-width: 900px){
+  .hamburger {
+display: block;
+cursor:pointer;
+  }
+  .hamburger .line{
+    width: 30px;
+    height: 3px;
+    margin: 6px 0;
+  }
+  .nav-bar{
+    display: none;
+  }
+} */
