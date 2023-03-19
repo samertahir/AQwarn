@@ -15,6 +15,7 @@ use App\Http\Controllers\LocationController;
 use App\Http\Controllers\StreetController;
 use App\Http\Controllers\ProvinceController;
 use App\Http\Controllers\CityController;
+use App\Http\Controllers\ProfileController;
 
 
 
@@ -67,7 +68,7 @@ use Illuminate\Support\Facades\Route;
         });
        // Admin/Devices Route Group
            Route::group(['prefix' =>'/device'], function() {
-        //    Route::get('/',[CategoryController::class,'category'])->name('category.index');
+            Route::get('/',[ProfileController::class,'get'])->name('device.index');
         //    Route::get('/create',[CategoryController::class,'create'])->name('category.create');
         //    Route::post('/store',[CategoryController::class,'store'])->name('category.store');
         //    Route::get('/edit/{id}',[CategoryController::class,'edit'])->name('category.edit');
@@ -186,6 +187,7 @@ use Illuminate\Support\Facades\Route;
 
 
    Auth ::routes();
+   Route::get("c",[CartItemsController::class,'index']);
    //cartitems
    Route::get("cartdetails",[CartItemsController::class,'index']);
    Route::get("delete/{id}",[CartItemsController::class,'delete']);

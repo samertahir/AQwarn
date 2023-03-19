@@ -22,15 +22,26 @@ class ProfileController extends Controller
         
 
     }
-    public function update($id,$status)
-    {
-        // return $id.$status;
+//     public function update($id,$status)
+//     {
+//         // return $id.$status;
 
-     $devices=Device::find($id);
-$devices->status=$status;
-$devices->save();
-return $devices;
-    }
-   
+//      $devices=Device::find($id);
+// $devices->status=$status;
+// $devices->save();
+// return $devices;
+//     }
+public function get()
+{
+  
+    
+    $devices= Device::get();
+    // $users=user::get();
+     return view('admin.device.index',compact('devices'));
+     
+    
+
+}
+
     
 }
