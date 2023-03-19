@@ -28,7 +28,6 @@
 <link href="C:\wamp64\AQwarn\public\assets\rabia\Uaques -aboutUs Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/responsive.css" rel="stylesheet">
 </head>
 <body>
-    <?php include 'masterR.php'?>
  <!--Page Title-->
     <section class="page-title centred" style="background-image: url(	http://azim.commonsupport.com/Uaques/images/background/page-title.jpg);">
         <div class="auto-container">

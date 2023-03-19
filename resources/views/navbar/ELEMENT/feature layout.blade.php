@@ -1,7 +1,5 @@
 @extends('layouts.masterR')
 @section('content')
-
-<body>
     <!--Page Title-->
     <section class="page-title centred" style="background-image: url(/assets/rabia/Uaques/page-title.jpg);">
         <div class="auto-container">
