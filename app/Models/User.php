@@ -22,7 +22,6 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'address',
         'contact_no',
         'cnic_no',
         'dob',
@@ -30,7 +29,8 @@ class User extends Authenticatable
         'city_id',
         'location_id',
         'province_id',
-        'role_id'
+        'role_id' ,
+        'address',
     ];
 
     /**

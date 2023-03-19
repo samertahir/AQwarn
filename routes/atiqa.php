@@ -80,11 +80,11 @@ use Illuminate\Support\Facades\Route;
             // Admin/User Route Group
             Route::group(['prefix' => '/user'], function() {
             Route::get('/',[UserController::class,'user'])->name('user.index');
-            Route::get('/create',[UserController::class,'create'])->name('user.create');
-            Route::post('/store',[UserController::class,'store'])->name('user.store');
-            Route::get('/edit',[UserController::class,'edit'])->name('user.edit');
-            Route::get('/update',[UserController::class,'update'])->name('user.update');
-            Route::get('/delete',[UserController::class,'delete'])->name('user.delete');
+            // Route::get('/create',[UserController::class,'create'])->name('user.create');
+            // Route::post('/store',[UserController::class,'store'])->name('user.store');
+            // Route::get('/edit',[UserController::class,'edit'])->name('user.edit');
+            // Route::get('/update',[UserController::class,'update'])->name('user.update');
+            // Route::get('/delete',[UserController::class,'delete'])->name('user.delete');
 
         });
 
