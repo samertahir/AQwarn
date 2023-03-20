@@ -1,6 +1,6 @@
 @extends('layouts.masterR')
 @section('content')
-<section class="page-title centred" style="background-image: url(images/background/page-title.jpg);">
+<section class="page-title centred" style="background-image: url(/assets/rabia/Uaques/page-title.jpg);">
     <div class="auto-container">
         <div class="content-box">
             <h1>Blog Details</h1>
@@ -19,7 +19,7 @@
                 <div class="blog-details-content">
                     <div class="inner-box">
                         <div class="upper-box">
-                            <figure class="image-box"><img src="http://azim.commonsupport.com/Uaques/images/background/page-title.jpg" alt=""></figure>
+                            <figure class="image-box"><img src="/assets/rabia/Uaques/page-title.jpg" alt=""></figure>
                             <div class="post-info">
                                 <ul class="info-box clearfix">
                                     <li><a href="#"><i class="flaticon-user"></i>Emal Kanson</a></li>
@@ -35,8 +35,8 @@
                                 <p>Sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.</p>
                                 <blockquote>
                                     <div class="border-shap">
-                                        <div class="border-1" style="background-image: url(http://azim.commonsupport.com/Uaques/images/resource/news-9.jpg);"></div>
-                                        <div class="border-2" style="background-image: url(images/icons/border-6.png);"></div>
+                                        <div class="border-1" style="background-image: url(/assets/rabia/Uaques/news-9.jpg);"></div>
+                                        <div class="border-2" style="background-image: url(/assets/rabia/Uaques/border-6.png);"></div>
                                     </div>
                                     Since vindictively over agile the some far well besides constructively well airy then close excellent grabbed gosh contrary far dalmatian upheld intrepid.
                                     <h5>Brendon Taylor</h5>
@@ -68,7 +68,7 @@
                         <h2 class="group-title">Comments (3)</h2>
                         <div class="comment-box">
                             <div class="comment">
-                                <figure class="image-box"><img src="images/resource/comment-1.png" alt=""></figure>
+                                <figure class="image-box"><img src="/assets/rabia/Uaques/comment-1.png" alt=""></figure>
                                 <div class="comment-inner">
                                     <h4>David Robert</h4>
                                     <div class="post-info">
@@ -79,7 +79,7 @@
                                 </div>
                             </div>
                             <div class="comment">
-                                <figure class="image-box"><img src="images/resource/comment-2.png" alt=""></figure>
+                                <figure class="image-box"><img src="/assets/rabia/Uaques/comment-2.png" alt=""></figure>
                                 <div class="comment-inner">
                                     <h4>Andrew Thomas</h4>
                                     <div class="post-info">
@@ -90,7 +90,7 @@
                                 </div>
                             </div>
                             <div class="comment">
-                                <figure class="image-box"><img src="images/resource/comment-3.png" alt=""></figure>
+                                <figure class="image-box"><img src="/assets/rabia/Uaques/comment-3.png" alt=""></figure>
                                 <div class="comment-inner">
                                     <h4>Russell Belan</h4>
                                     <div class="post-info">
@@ -156,22 +156,22 @@
                         <h3 class="widget-title">Recent Posts</h3>
                         <div class="widget-content">
                             <div class="post">
-                                <figure class="image-box"><a href="blog-details.html"><img src="images/resource/blog-post-1.jpg" alt=""></a></figure>
+                                <figure class="image-box"><a href="blog-details.html"><img src="/assets/rabia/Uaques/blog-post-1.jpg" alt=""></a></figure>
                                 <h5><a href="blog-details.html">Ensuring With The Purest Best-Tasting Water</a></h5>
                                 <div class="post-date">Posted: Nov 25, 2019 </div>
                             </div>
                             <div class="post">
-                                <figure class="image-box"><a href="blog-details.html"><img src="images/resource/blog-post-2.jpg" alt=""></a></figure>
+                                <figure class="image-box"><a href="blog-details.html"><img src="/assets/rabia/Uaques/blog-post-2.jpg" alt=""></a></figure>
                                 <h5><a href="blog-details.html">We Are Promised To Deliver Bottled Water In-Time</a></h5>
                                 <div class="post-date">Posted: Nov 24, 2019 </div>
                             </div>
                             <div class="post">
-                                <figure class="image-box"><a href="blog-details.html"><img src="images/resource/blog-post-3.jpg" alt=""></a></figure>
+                                <figure class="image-box"><a href="blog-details.html"><img src="/assets/rabia/Uaques/blog-post-3.jpg" alt=""></a></figure>
                                 <h5><a href="blog-details.html">We Have World Class Quality At Low Cost</a></h5>
                                 <div class="post-date">Posted: Nov 23, 2019 </div>
                             </div>
                             <div class="post">
-                                <figure class="image-box"><a href="blog-details.html"><img src="images/resource/blog-post-4.jpg" alt=""></a></figure>
+                                <figure class="image-box"><a href="blog-details.html"><img src="/assets/rabia/Uaques/blog-post-4.jpg" alt=""></a></figure>
                                 <h5><a href="blog-details.html">Equipped with Five Stage Purification System</a></h5>
                                 <div class="post-date">Posted: Nov 22, 2019 </div>
                             </div>
@@ -192,12 +192,12 @@
                         <h3 class="widget-title">Instagram Feed</h3>
                         <div class="widget-content">
                             <ul class="image-list clearfix">
-                                <li class="image-box"><figure><a href="#"><img src="images/resource/instagram-1.jpg" alt=""></a></figure></li>
-                                <li class="image-box"><figure><a href="#"><img src="images/resource/instagram-2.jpg" alt=""></a></figure></li>
-                                <li class="image-box"><figure><a href="#"><img src="images/resource/instagram-3.jpg" alt=""></a></figure></li>
-                                <li class="image-box"><figure><a href="#"><img src="images/resource/instagram-4.jpg" alt=""></a></figure></li>
-                                <li class="image-box"><figure><a href="#"><img src="images/resource/instagram-5.jpg" alt=""></a></figure></li>
-                                <li class="image-box"><figure><a href="#"><img src="images/resource/instagram-6.jpg" alt=""></a></figure></li>
+                                <li class="image-box"><figure><a href="#"><img src="/assets/rabia/Uaques/instagram-1.jpg" alt=""></a></figure></li>
+                                <li class="image-box"><figure><a href="#"><img src="/assets/rabia/Uaques/instagram-2.jpg" alt=""></a></figure></li>
+                                <li class="image-box"><figure><a href="#"><img src="/assets/rabia/Uaques/instagram-3.jpg" alt=""></a></figure></li>
+                                <li class="image-box"><figure><a href="#"><img src="/assets/rabia/Uaques/instagram-4.jpg" alt=""></a></figure></li>
+                                <li class="image-box"><figure><a href="#"><img src="/assets/rabia/Uaques/instagram-5.jpg" alt=""></a></figure></li>
+                                <li class="image-box"><figure><a href="#"><img src="/assets/rabia/Uaques/instagram-6.jpg" alt=""></a></figure></li>
                             </ul>
                         </div>
                     </div>

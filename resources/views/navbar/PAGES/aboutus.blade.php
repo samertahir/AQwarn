@@ -29,7 +29,7 @@
 </head>
 <body>
  <!--Page Title-->
-    <section class="page-title centred" style="background-image: url(	http://azim.commonsupport.com/Uaques/images/background/page-title.jpg);">
+    <section class="page-title centred" style="background-image: url(/assets/rabia/Uaques/page-title.jpg);">
         <div class="auto-container">
             <div class="content-box">
                 <h1>About Us</h1>
@@ -97,7 +97,7 @@
             <div class="upper-content">
                 <div id="video_block_one">
                     <div class="video-inner">
-                        <div class="video-box wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms" style="background-image: url(	http://azim.commonsupport.com/Uaques/images/background/video-1.jpg);">
+                        <div class="video-box wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms" style="background-image: url(/assets/rabia/Uaques/video-1.jpg);">
                             <div class="video-btn">
                                 <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="lightbox-image" data-caption=""><i class="flaticon-play-button-arrowhead"></i></a>
                             </div>
@@ -116,13 +116,13 @@
             <div class="lower-content">
                 <div class="row clearfix">
                     <div class="col-lg-4 col-md-6 col-sm-12 image-column">
-                        <figure class="image-box wow flipInY" data-wow-delay="00ms" data-wow-duration="1500ms"><a href="images/resource/video-1.jpg" class="lightbox-image" data-fancybox="gallery"><img src="http://azim.commonsupport.com/Uaques/images/resource/video-1.jpg" alt=""></a></figure>
+                        <figure class="image-box wow flipInY" data-wow-delay="00ms" data-wow-duration="1500ms"><a href="images/resource/video-1.jpg" class="lightbox-image" data-fancybox="gallery"><img src="/assets/rabia/Uaques/video-1.jpg" alt=""></a></figure>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 image-column">
-                        <figure class="image-box wow flipInY" data-wow-delay="300ms" data-wow-duration="1500ms"><a href="images/resource/video-2.jpg" class="lightbox-image" data-fancybox="gallery"><img src="http://azim.commonsupport.com/Uaques/images/resource/video-2.jpg" alt=""></a></figure>
+                        <figure class="image-box wow flipInY" data-wow-delay="300ms" data-wow-duration="1500ms"><a href="images/resource/video-2.jpg" class="lightbox-image" data-fancybox="gallery"><img src="/assets/rabia/Uaques/video-2.jpg" alt=""></a></figure>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 image-column">
-                        <figure class="image-box wow flipInY" data-wow-delay="600ms" data-wow-duration="1500ms"><a href="images/resource/video-3.jpg" class="lightbox-image" data-fancybox="gallery"><img src="http://azim.commonsupport.com/Uaques/images/resource/video-3.jpg" alt=""></a></figure>
+                        <figure class="image-box wow flipInY" data-wow-delay="600ms" data-wow-duration="1500ms"><a href="images/resource/video-3.jpg" class="lightbox-image" data-fancybox="gallery"><img src="/assets/rabia/Uaques/video-3.jpg" alt=""></a></figure>
                     </div>
                 </div>
             </div>
@@ -131,9 +131,9 @@
     <!-- video-section end -->
     <!-- filtration-process -->
     <section class="filtration-process bg-color-2">
-        <div class="bg-pattern" style="background-image: url(	http://azim.commonsupport.com/Uaques/images/icons/pattern-3.png);"></div>
+        <div class="bg-pattern" style="background-image: url(/assets/rabia/Uaques/pattern-3.png);"></div>
         <div class="border-shap">
-            <div class="border-1" style="background-image: url(http://azim.commonsupport.com/Uaques/images/icons/border-5.png);"></div>
+            <div class="border-1" style="background-image: url(/assets/rabia/Uaques/images/icons/border-5.png);"></div>
         </div>
         <div class="auto-container">
             <div class="top-title clearfix">
@@ -148,7 +148,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 single-column">
                     <div class="single-item wow slideInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="inner-box">
-                            <div class="icon-box" style="background-image: url(http://azim.commonsupport.com/Uaques/images/icons/icon-bg-1.png);">
+                            <div class="icon-box" style="background-image: url(/assets/rabia/Uaques/icon-bg-1.png);">
                                 <i class="flaticon-water-1"></i>
                             </div>
                             <h3><a href="#">Deep Cleanse & Chemical Removal</a></h3>
@@ -159,7 +159,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 single-column">
                     <div class="single-item wow slideInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                         <div class="inner-box">
-                            <div class="icon-box" style="background-image: url(http://azim.commonsupport.com/Uaques/images/icons/icon-bg-1.png);">
+                            <div class="icon-box" style="background-image: url(/assets/rabia/Uaques/icon-bg-1.png);">
                                 <i class="flaticon-water-4"></i>
                             </div>
                             <h3><a href="#">Micro Extraction & Sterlisation</a></h3>
@@ -170,7 +170,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 single-column">
                     <div class="single-item wow slideInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
                         <div class="inner-box">
-                            <div class="icon-box" style="background-image: url(http://azim.commonsupport.com/Uaques/images/icons/icon-bg-1.png);">
+                            <div class="icon-box" style="background-image: url(/assets/rabia/Uaques/icon-bg-1.png);">
                                 <i class="flaticon-water-3"></i>
                             </div>
                             <h3><a href="#">Chlorein Disinfection For Mineral Water</a></h3>
@@ -195,7 +195,7 @@
                             <div class="single-item wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                                 <figure class="icon-box">
                                     <span>K+</span>
-                                    <img src="http://azim.commonsupport.com/Uaques/images/icons/water-drop-1.png" alt="">
+                                    <img src="/assets/rabia/Uaques/water-drop-1.png" alt="">
                                 </figure>
                                 <h3><a href="#">Potassium</a></h3>
                                 <h5>2.5 mg/L</h5>
@@ -204,7 +204,7 @@
                             <div class="single-item wow slideInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
                                 <figure class="icon-box">
                                     <span>Fl</span>
-                                    <img src="http://azim.commonsupport.com/Uaques/images/icons/water-drop-1.png" alt="">
+                                    <img src="/assets/rabia/Uaques/water-drop-1.png" alt="">
                                 </figure>
                                 <h3><a href="#">Fluoride</a></h3>
                                 <h5>0.5 mg/L</h5>
@@ -214,8 +214,8 @@
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12 image-column">
                         <div class="image-box">
-                            <div class="pattern-bg" style="background-image: url(images/icons/pattern-2.png);"></div>
-                            <figure class="image wow slideInUp" data-wow-delay="0ms" data-wow-duration="1500ms"><img src="http://azim.commonsupport.com/Uaques/images/resource/water-glass-1.png" alt=""></figure>
+                            <div class="pattern-bg" style="background-image: url(/assets/rabia/Uaques/pattern-2.png);"></div>
+                            <figure class="image wow slideInUp" data-wow-delay="0ms" data-wow-duration="1500ms"><img src="/assets/rabia/Uaques/water-glass-1.png" alt=""></figure>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12 right-column">
@@ -223,7 +223,7 @@
                             <div class="single-item wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                                 <figure class="icon-box">
                                     <span>Cl</span>
-                                    <img src="http://azim.commonsupport.com/Uaques/images/icons/water-drop-1.png" alt="">
+                                    <img src="/assets/rabia/Uaques/water-drop-1.png" alt="">
                                 </figure>
                                 <h3><a href="#">Chloride</a></h3>
                                 <h5>350a mg/L</h5>
@@ -232,7 +232,7 @@
                             <div class="single-item wow slideInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
                                 <figure class="icon-box">
                                     <span>Mg</span>
-                                    <img src="http://azim.commonsupport.com/Uaques/images/icons/water-drop-1.png" alt="">
+                                    <img src="/assets/rabia/Uaques/water-drop-1.png" alt="">
                                 </figure>
                                 <h3><a href="#">Magnesium</a></h3>
                                 <h5>14.5 mg/L</h5>
@@ -387,7 +387,7 @@ body {
             <label>{{$dev->device_name}}</label>
             {{-- <label>{{$dev->status}}</label> --}}
            
-            
+{{--             
             <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width:{{$dev->status}}% ;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{$dev->status}}</div>
               </div>

@@ -31,7 +31,7 @@
     
 
  <!--Page Title-->
-    <section class="page-title centred" style="background-image: url(http://azim.commonsupport.com/Uaques/images/background/page-title.jpg);">
+    <section class="page-title centred" style="background-image: url(/assets/rabia/Uaques/page-title.jpg);">
         <div class="auto-container">
             <div class="content-box">
                 <h1>Error Page</h1>
@@ -44,12 +44,12 @@
 
     <!-- error-section -->
     <section class="error-section centred">
-        <figure class="image-layer wow slideInRight animated" data-wow-delay="300ms" data-wow-duration="1500ms"><img src="http://azim.commonsupport.com/Uaques/images/icons/bottle-4.png" alt=""></figure>
+        <figure class="image-layer wow slideInRight animated" data-wow-delay="300ms" data-wow-duration="1500ms"><img src="/assets/rabia/Uaques/bottle-4.png" alt=""></figure>
         <div class="auto-container">
             <div class="content-box">
                 <h1>404</h1>
                 <h2>Oops, This Page Not Be Found !</h2>
-                <div class="text">Can't find what you need? Take a moment and do a search<br /> below or start from our <a href="index.html">Homepage.</a></div>
+                <div class="text">Can't find what you need? Take a moment and do a search<br /> below or start from our <a href="/HOME">Homepage.</a></div>
             </div>
         </div>
     </section>
