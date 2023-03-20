@@ -16,9 +16,8 @@ use App\Http\Controllers\StreetController;
 use App\Http\Controllers\ProvinceController;
 use App\Http\Controllers\CityController;
 use App\Http\Controllers\ProfileController;
-
-
-
+use App\Http\Controllers\ShopDeliveryFormController;
+use App\Http\Controllers\ShopDetailsController;
 use App\Models\Admin;
 use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Auth;
@@ -187,12 +186,15 @@ use Illuminate\Support\Facades\Route;
 
 
    Auth ::routes();
-   Route::get("c",[CartItemsController::class,'index']);
+
    //cartitems
    Route::get("cartdetails",[CartItemsController::class,'index']);
    Route::get("delete/{id}",[CartItemsController::class,'delete']);
    Route::get("increment/{id}",[CartItemsController::class,'increment']);
    Route::get("decrement/{id}",[CartItemsController::class,'decrement']);
+ //    delivery Order
+  Route::get('shopdeliveryform',[ShopDeliveryFormController::class,'index']);
+   Route::post('/shopdeliveryform',[OrderController::class,'store'])->name('shop.store');
 
 
       Route::get('/role',[App\Http\Controllers\HomeController::class,'index' ])->name('home');

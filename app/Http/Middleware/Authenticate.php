@@ -19,12 +19,12 @@ class Authenticate extends Middleware
             return route('login');
         }
     }
-    
+
     Route::get('/devices', function () {
         // Only authenticated users may enter...
     })->middleware('auth');
-    
-    
+
+
 }
 
 }

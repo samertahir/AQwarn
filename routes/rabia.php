@@ -25,3 +25,4 @@ Route::get("profile",[ProfileController::class,'index']);
 Route::get("shopdetails",[ShopDetailsController::class,'index']);
 Route::get("ourshop",[OurShopController::class,'index']);
 
+

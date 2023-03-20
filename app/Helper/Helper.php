@@ -3,6 +3,7 @@
 use App\Models\CartItems;
 use Illuminate\Support\Facades\Auth;
 
+
      function getitems_count(){
         $count=0;
 
@@ -12,5 +13,3 @@ use Illuminate\Support\Facades\Auth;
         $count=CartItems::where('user_id',$id)->count();}
         return $count;
     }
-
-?>
