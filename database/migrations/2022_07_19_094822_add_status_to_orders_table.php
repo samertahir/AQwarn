@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddStatusToDevices extends Migration
+class AddStatusToOrdersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class AddStatusToDevices extends Migration
      */
     public function up()
     {
-        Schema::table('devices', function (Blueprint $table) {
-            $table->double('status');
+        Schema::table('orders', function (Blueprint $table) {
+            //
         });
     }
 
@@ -25,8 +25,8 @@ class AddStatusToDevices extends Migration
      */
     public function down()
     {
-        Schema::table('devices', function (Blueprint $table) {
-            $table->dropColumn('status');
+        Schema::table('orders', function (Blueprint $table) {
+            //
         });
     }
 }
