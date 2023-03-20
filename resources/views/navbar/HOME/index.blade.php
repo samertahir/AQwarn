@@ -1,7 +1,34 @@
 @extends('layouts.masterR')
 @section('content')
-<h1 style="text-align: center;" >A Trusted Name In
-    <br>Bottled Water Industry</h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ABOUT US</title>
+	<!-- Fav Icon -->
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+<!-- Stylesheets -->
+<link href="C:\wamp64\AQwarn\public\assets\rabia\Uaques -aboutUs Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/font-awesome-all.css" rel="stylesheet">
+<link href="C:\wamp64\AQwarn\public\assets\rabia\Uaques -aboutUs Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/flaticon.css" rel="stylesheet">
+<link href="C:\wamp64\AQwarn\public\assets\rabia\Uaques -aboutUs Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/owl.css" rel="stylesheet">
+<link href="C:\wamp64\AQwarn\public\assets\rabia\Uaques -aboutUs Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/bootstrap.css" rel="stylesheet">
+<link href="C:\wamp64\AQwarn\public\assets\rabia\Uaques -aboutUs Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/jquery.fancybox.min.css" rel="stylesheet">
+<link href="C:\wamp64\AQwarn\public\assets\rabia\Uaques -aboutUs Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/animate.css" rel="stylesheet">
+<link href="C:\wamp64\AQwarn\public\assets\rabia\Uaques -aboutUs Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/imagebg.css" rel="stylesheet">
+<link href="C:\wamp64\AQwarn\public\assets\rabia\Uaques -aboutUs Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/jquery-ui.css" rel="stylesheet">
+<link href="C:\wamp64\AQwarn\public\assets\rabia\Uaques -aboutUs Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/jquery-ui.css" rel="stylesheet">
+<link href="C:\wamp64\AQwarn\public\assets\rabia\Uaques -aboutUs Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/color.css" rel="stylesheet">
+<link href="C:\wamp64\AQwarn\public\assets\rabia\Uaques -aboutUs Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/style.css" rel="stylesheet">
+<link href="C:\wamp64\AQwarn\public\assets\rabia\Uaques -aboutUs Drinking Mineral Water Delivery HTML Template Preview - ThemeForest_files/responsive.css" rel="stylesheet">
+</head>
+<body>
+
     <br>
     <div class="container">
         <div class="row">
@@ -72,13 +99,10 @@
 
 
 
-    <div class="container mt-5 mb-3 bg-light">
-        <div class="row text-center">
-        <h1>Bottles We Deliver</h1></div>
-        <br>
+  
 
 
-        <div class="container mt-5 mb-3 bg-light">
+        <div class="container-fluid mt-5 mb-3 bg-light">
             <div class="row text-center">
             <h1>Bottles We Deliver</h1></div>
             <br>
@@ -103,31 +127,78 @@
     <br>
 
     </div>
-    <div class="container">
+    <div class="container-fluid">
     <h1 class="text-center mt-5 mb-3  ">Helping TO Improve</h1>
     <div class="row">
         <div class="col-lg">
-            <img src="http://azim.commonsupport.com/Uaques/images/resource/video-1.jpg">
+            <img src="/assets/rabia/Uaques/video-1.jpg">
         </div>
         <div class="col-lg">
-            <img src="http://azim.commonsupport.com/Uaques/images/resource/video-2.jpg">
+            <img src="/assets/rabia/Uaques/video-2.jpg">
         </div>
         <div class="col-lg">
-            <img src="http://azim.commonsupport.com/Uaques/images/resource/video-3.jpg">
+            <img src="/assets/rabia/Uaques/video-3.jpg">
         </div>
         <div class="col-lg">
-            <img src="http://azim.commonsupport.com/Uaques/images/resource/video-1.jpg">
+            <img src="/assets/rabia/Uaques/video-1.jpg">
         </div>
 
     </div></div>
+    <br>
+    <!-- filtration-process -->
+    <section class="filtration-process bg-color-2">
+        <div class="bg-pattern" style="background-image: url(/assets/rabia/Uaques/pattern-3.png);"></div>
+        <div class="border-shap">
+            <div class="border-1" style="background-image: url(/assets/rabia/Uaques/border-5.png);"></div>
+        </div>
+        <div class="auto-container">
+            <div class="top-title clearfix">
+                <div class="title-inner">
+                    <div class="sec-title"><h1>Filtration Process</h1></div>
+                </div>
+                <div class="text-inner">
+                    <div class="text">Aliquaut enim mini veniam quis trud exercitation ullamco exa consequat. Duis aute rue dolor prehendrit lorem ipsum sit amet consectetur adipisicing sed.</div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-4 col-md-6 col-sm-12 single-column">
+                    <div class="single-item wow slideInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="icon-box" style="background-image: url(/assets/rabia/Uaques/icon-bg-1.png);">
+                                <i class="flaticon-water-1"></i>
+                            </div>
+                            <h3><a href="#">Deep Cleanse & Chemical Removal</a></h3>
+                            <div class="text">Exercitation ullamco laboris aliquip duis aute irure dolor iny rep henderit nisl voluptate sed ipsum velit.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 single-column">
+                    <div class="single-item wow slideInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="icon-box" style="background-image: url(/assets/rabia/Uaques/icon-bg-1.png);">
+                                <i class="flaticon-water-4"></i>
+                            </div>
+                            <h3><a href="#">Micro Extraction & Sterlisation</a></h3>
+                            <div class="text">Exercitation ullamco laboris aliquip duis aute irure dolor iny rep henderit nisl voluptate sed ipsum velit.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 single-column">
+                    <div class="single-item wow slideInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="icon-box" style="background-image: url(/assets/rabia/Uaques/icon-bg-1.png);">
+                                <i class="flaticon-water-3"></i>
+                            </div>
+                            <h3><a href="#">Chlorein Disinfection For Mineral Water</a></h3>
+                            <div class="text">Exercitation ullamco laboris aliquip duis aute irure dolor iny rep henderit nisl voluptate sed ipsum velit.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- filtration-process end -->
 
-
-    {{-- <div class="container mt-5 mb-3 ">
-        <h1 class="text-center bg-warning">Uaques Basic Water</h1>
-        <h1 class="text-center bg-warning">Composition</h1>
-        <img class="img-fluid max-width:100%" src="C:\Users\mugha\OneDrive\Pictures\Screenshots\2022-04-09.png">
-    </div> --}}
-        <!-- composition-section -->
         <section class="composition-section bg-color-1">
             <div class="auto-container">
                 <div class="sec-title text-center">
@@ -140,7 +211,7 @@
                                 <div class="single-item wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                                     <figure class="icon-box">
                                         <span>K+</span>
-                                        <img src="http://azim.commonsupport.com/Uaques/images/icons/water-drop-1.png" alt="">
+                                        <img src="/assets/rabia/Uaques/water-drop-1.png" alt="">
                                     </figure>
                                     <h3><a href="#">Potassium</a></h3>
                                     <h5>2.5 mg/L</h5>
@@ -149,7 +220,7 @@
                                 <div class="single-item wow slideInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
                                     <figure class="icon-box">
                                         <span>Fl</span>
-                                        <img src="http://azim.commonsupport.com/Uaques/images/icons/water-drop-1.png" alt="">
+                                        <img src="/assets/rabia/Uaques/water-drop-1.png" alt="">
                                     </figure>
                                     <h3><a href="#">Fluoride</a></h3>
                                     <h5>0.5 mg/L</h5>
@@ -159,8 +230,8 @@
                         </div>
                         <div class="col-lg-4 col-md-12 col-sm-12 image-column">
                             <div class="image-box">
-                                <div class="pattern-bg" style="background-image: url(images/icons/pattern-2.png);"></div>
-                                <figure class="image wow slideInUp" data-wow-delay="0ms" data-wow-duration="1500ms"><img src="http://azim.commonsupport.com/Uaques/images/resource/water-glass-1.png" alt=""></figure>
+                                <div class="pattern-bg" style="background-image: url(/assets/rabia/Uaques/pattern-2.png);"></div>
+                                <figure class="image wow slideInUp" data-wow-delay="0ms" data-wow-duration="1500ms"><img src="/assets/rabia/Uaques/water-glass-1.png" alt=""></figure>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12 col-sm-12 right-column">
@@ -168,7 +239,7 @@
                                 <div class="single-item wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                                     <figure class="icon-box">
                                         <span>Cl</span>
-                                        <img src="http://azim.commonsupport.com/Uaques/images/icons/water-drop-1.png" alt="">
+                                        <img src="/assets/rabia/Uaques/water-drop-1.png" alt="">
                                     </figure>
                                     <h3><a href="#">Chloride</a></h3>
                                     <h5>350a mg/L</h5>
@@ -177,7 +248,7 @@
                                 <div class="single-item wow slideInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
                                     <figure class="icon-box">
                                         <span>Mg</span>
-                                        <img src="http://azim.commonsupport.com/Uaques/images/icons/water-drop-1.png" alt="">
+                                        <img src="/assets/rabia/Uaques/water-drop-1.png" alt="">
                                     </figure>
                                     <h3><a href="#">Magnesium</a></h3>
                                     <h5>14.5 mg/L</h5>
@@ -207,21 +278,7 @@
                 </div>
             </div>
         </section>
-        <!-- composition-section end -->
-    {{-- <div class="container mt-5 mb-3 bg-primary">
-        <img src="/assets/rabia/Uaques/service-men-1.png" style="width:100%;">
-        <div class="centered">
-       <h1 class="bg-warning">Bottled Water Delivery &</h1>
-       <h1 class="bg-warning">Services</h1>
-        </div>
-        <div class="bottom-right      teXt-color-warning">
-            <p><h3> 1: Hygenic and Ergonomic Bottles</h3></p>
-        <p><h3> 2: Free Delivery On Weekends</h3></p>
-        <p><h3> 3: 5 Steps Filtration Plants</h3></p>
-        <p><h3> 4: Best For Health & Hydration</h3></p>
-        </div>
-    </div> --}}
-        <!-- info-section -->
+
         <section class="info-section bg-color-2">
             <div class="image-layer wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms"><img src="/assets/rabia/Uaques/service-men-1.png" style="width:90%;"></div>
             <div class="bg-pattern" style="background-image: url(/assets/rabia/Uaques/pattern-3.png);"></div>
@@ -251,20 +308,20 @@
         <!-- info-section end -->
         <!-- clients-section  -->
     <section class="clients-section">
-    	<div class="auto-container mt-5 mb-3">
+    	<div class="auto-container-fluid mt-5 mb-3">
 
-    		<div class="card">
+    		<div class="card ">
     			<div class="card-body">
     				<div class="card-title">
     					<h1 class="text-center">Trusted Partners</h1>
     					<p class="text-center">Aliquaut enim mini veniam quis trud exercitation ullamco exa consequat. Duis aute rue dolor prehendrit lorem ipsum sit amet consectetur adipisicing sed.</p>
     					<div class="row">
     						<div class="card-body"></div>
-    						<div class="col-lg"><img src="http://azim.commonsupport.com/Uaques/images/clients/client-3.png"></div>
-    						<div class="col-lg"><img src="http://azim.commonsupport.com/Uaques/images/clients/client-4.png"></div>
-    						<div class="col-lg"><img src="http://azim.commonsupport.com/Uaques/images/clients/client-5.png"></div>
-    						<div class="col-lg"><img src="http://azim.commonsupport.com/Uaques/images/clients/client-1.png"></div>
-    						<div class="col-lg"><img src="http://azim.commonsupport.com/Uaques/images/clients/client-2.png"></div>
+    						<div class="col-lg"><img src="/assets/rabia/Uaques/client-3.png"></div>
+    						<div class="col-lg"><img src="/assets/rabia/Uaques/client-4.png"></div>
+    						<div class="col-lg"><img src="/assets/rabia/Uaques/client-5.png"></div>
+    						<div class="col-lg"><img src="/assets/rabia/Uaques/client-1.png"></div>
+    						<div class="col-lg"><img src="/assets/rabia/Uaques/client-2.png"></div>
 
     					</div>
 
@@ -277,3 +334,5 @@
     </section>
     <!-- clients-section end -->
     @endsection
+</body>
+</html>

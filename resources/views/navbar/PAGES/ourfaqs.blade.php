@@ -33,7 +33,7 @@
 </head>
 <body>
  <!--Page Title-->
-    <section class="page-title centred" style="background-image: url(http://azim.commonsupport.com/Uaques/images/background/page-title.jpg);">
+    <section class="page-title centred" style="background-image: url(/assets/rabia/Uaques/page-title.jpg);">
         <div class="auto-container">
             <div class="content-box">
                 <h1>Read FAQ’s</h1>
