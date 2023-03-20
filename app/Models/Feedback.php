@@ -9,5 +9,5 @@ class Feedback extends Model
 {
     use HasFactory;
 
-    protected $fillable=['id','user_name','contact_no','email_id','subject','message','feedback_date'];
+    protected $fillable=['id','user_name','email_id','message','feedback_date'];
 }

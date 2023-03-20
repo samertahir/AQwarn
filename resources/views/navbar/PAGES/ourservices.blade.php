@@ -27,7 +27,7 @@
 </head>
 <body>
  <!--Page Title-->
-    <section class="page-title centred" style="background-image: url(http://azim.commonsupport.com/Uaques/images/background/page-title.jpg);">
+    <section class="page-title centred" style="background-image: url(/assets/rabia/Uaques/page-title.jpg);">
         <div class="auto-container">
             <div class="content-box">
                 <h1>Our Services</h1>
@@ -85,8 +85,8 @@
     <!-- service-section -->
     <section class="service-section bg-color-1">
         <div class="border-shap">
-            <div class="border-1" style="background-image: url(images/icons/border-1.png);"></div>
-            <div class="border-2" style="background-image: url(images/icons/border-2.png);"></div>
+            <div class="border-1" style="background-image: url(/assets/rabia/Uaques/border-1.png);"></div>
+            <div class="border-2" style="background-image: url(/assets/rabia/Uaques/border-2.png);"></div>
         </div>
         <div class="auto-container">
             <div class="top-title clearfix">
@@ -101,7 +101,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 service-block">
                     <div class="service-block-one wow flipInY" data-wow-delay="00ms" data-wow-duration="1500ms">
                         <div class="inner-box">
-                            <figure class="image-box"><a href="#"><img src="http://azim.commonsupport.com/Uaques/images/resource/service-1.jpg" alt=""></a></figure>
+                            <figure class="image-box"><a href="#"><img src="/assets/rabia/Uaques/service-1.jpg" alt=""></a></figure>
                             <div class="lower-content">
                                 <h3><a href="#">Residential Waters</a></h3>
                                 <div class="text">Exercitation kamco sed laboris aliquip duis aute ure dolor laboret buica dolore magna aliqua duis aute irure.</div>
@@ -114,7 +114,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 service-block">
                     <div class="service-block-one wow flipInY" data-wow-delay="00ms" data-wow-duration="1500ms">
                         <div class="inner-box">
-                            <figure class="image-box"><a href="#"><img src="http://azim.commonsupport.com/Uaques/images/resource/service-2.jpg" alt=""></a></figure>
+                            <figure class="image-box"><a href="#"><img src="/assets/rabia/Uaques/service-2.jpg" alt=""></a></figure>
                             <div class="lower-content">
                                 <h3><a href="#">Commercial Waters</a></h3>
                                 <div class="text">Exercitation kamco sed laboris aliquip duis aute ure dolor laboret buica dolore magna aliqua duis aute irure.</div>
@@ -127,7 +127,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 service-block">
                     <div class="service-block-one wow flipInY" data-wow-delay="00ms" data-wow-duration="1500ms">
                         <div class="inner-box">
-                            <figure class="image-box"><a href="#"><img src="http://azim.commonsupport.com/Uaques/images/resource/service-3.jpg" alt=""></a></figure>
+                            <figure class="image-box"><a href="#"><img src="/assets/rabia/Uaques/service-3.jpg" alt=""></a></figure>
                             <div class="lower-content">
                                 <h3><a href="#">Filtration Plants</a></h3>
                                 <div class="text">Exercitation kamco sed laboris aliquip duis aute ure dolor laboret buica dolore magna aliqua duis aute irure.</div>
@@ -140,7 +140,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 service-block">
                     <div class="service-block-one wow flipInY" data-wow-delay="300ms" data-wow-duration="1500ms">
                         <div class="inner-box">
-                            <figure class="image-box"><a href="#"><img src="http://azim.commonsupport.com/Uaques/images/resource/service-4.jpg" alt=""></a></figure>
+                            <figure class="image-box"><a href="#"><img src="/assets/rabia/Uaques/service-4.jpg" alt=""></a></figure>
                             <div class="lower-content">
                                 <h3><a href="#">Free Water Delivery</a></h3>
                                 <div class="text">Exercitation kamco sed laboris aliquip duis aute ure dolor laboret buica dolore magna aliqua duis aute irure.</div>
@@ -153,7 +153,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 service-block">
                     <div class="service-block-one wow flipInY" data-wow-delay="300ms" data-wow-duration="1500ms">
                         <div class="inner-box">
-                            <figure class="image-box"><a href="#"><img src="http://azim.commonsupport.com/Uaques/images/resource/service-5.jpg" alt=""></a></figure>
+                            <figure class="image-box"><a href="#"><img src="/assets/rabia/Uaques/service-5.jpg" alt=""></a></figure>
                             <div class="lower-content">
                                 <h3><a href="#">Water Softening</a></h3>
                                 <div class="text">Exercitation kamco sed laboris aliquip duis aute ure dolor laboret buica dolore magna aliqua duis aute irure.</div>
@@ -166,7 +166,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 service-block">
                     <div class="service-block-one wow flipInY" data-wow-delay="300ms" data-wow-duration="1500ms">
                         <div class="inner-box">
-                            <figure class="image-box"><a href="#"><img src="http://azim.commonsupport.com/Uaques/images/resource/service-6.jpg" alt=""></a></figure>
+                            <figure class="image-box"><a href="#"><img src="/assets/rabia/Uaques/service-6.jpg" alt=""></a></figure>
                             <div class="lower-content">
                                 <h3><a href="#">Coolers & Dispensers</a></h3>
                                 <div class="text">Exercitation kamco sed laboris aliquip duis aute ure dolor laboret buica dolore magna aliqua duis aute irure.</div>
@@ -182,7 +182,7 @@
     <!-- service-section end -->
   <!-- request-section -->
     <section class="request-section bg-color-2">
-        <div class="bg-pattern" style="background-image: url(http://azim.commonsupport.com/Uaques/images/icons/pattern-3.png);"></div>
+        <div class="bg-pattern" style="background-image: url(/assets/rabia/Uaques/pattern-3.png);"></div>
         <div class="auto-container">
             <div class="sec-title text-center">
                 <h1>Get Pure & Healthy<br />Drinking Water</h1>
@@ -268,11 +268,11 @@
     					<p class="text-center">Aliquaut enim mini veniam quis trud exercitation ullamco exa consequat. Duis aute rue dolor prehendrit lorem ipsum sit amet consectetur adipisicing sed.</p>
     					<div class="row">
     						<div class="card-body"></div>
-    						<div class="col-lg"><img src="http://azim.commonsupport.com/Uaques/images/clients/client-3.png"></div>
-    						<div class="col-lg"><img src="http://azim.commonsupport.com/Uaques/images/clients/client-4.png"></div>
-    						<div class="col-lg"><img src="http://azim.commonsupport.com/Uaques/images/clients/client-5.png"></div>
-    						<div class="col-lg"><img src="http://azim.commonsupport.com/Uaques/images/clients/client-1.png"></div>
-    						<div class="col-lg"><img src="http://azim.commonsupport.com/Uaques/images/clients/client-2.png"></div>
+    						<div class="col-lg"><img src="/assets/rabia/Uaques/client-3.png"></div>
+    						<div class="col-lg"><img src="/assets/rabia/Uaques/client-4.png"></div>
+    						<div class="col-lg"><img src="/assets/rabia/Uaques/client-5.png"></div>
+    						<div class="col-lg"><img src="/assets/rabia/Uaques/client-1.png"></div>
+    						<div class="col-lg"><img src="/assets/rabia/Uaques/client-2.png"></div>
     			
     					</div>
 

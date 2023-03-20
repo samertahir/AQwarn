@@ -17,7 +17,7 @@
     <div class="auto-container">
         <div id="video_block_one">
             <div class="video-inner">
-                <div class="video-box wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms" style="background-image: url(images/background/video-1.jpg);">
+                <div class="video-box wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms" style="background-image: url(/assets/rabia/Uaques/video-1.jpg);">
                     <div class="video-btn">
                         <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="lightbox-image" data-caption=""><i class="flaticon-play-button-arrowhead"></i></a>
                     </div>

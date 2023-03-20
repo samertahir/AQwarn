@@ -10,45 +10,51 @@
     </div>
 </section>
 <!--End Page Title-->
- <!-- service-layout-2 -->
- <section class="service-layout-2 bg-color-1 sec-pad">
+<!-- service-layout-1 -->
+<section class="service-layout-1 bg-color-1 sec-pad">
     <div class="auto-container">
-        <div class="three-column-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
-            <div class="service-block-one">
-                <div class="inner-box">
-                    <figure class="image-box"><a href="#"><img src="/assets/rabia/Uaques/service-1.jpg" alt=""></a></figure>
-                    <div class="lower-content">
-                        <h3><a href="#">Residential Waters</a></h3>
-                        <div class="text">Exercitation kamco sed laboris aliquip duis aute ure dolor laboret buica dolore magna aliqua duis aute irure.</div>
-                        <h4 class="price">Starts from $35</h4>
-                        <div class="btn-box"><a href="#">Order Now</a></div>
+        <div class="row clearfix">
+            <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                <div class="service-block-one wow flipInY" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <figure class="image-box"><a href="#"><img src="/assets/rabia/Uaques/service-1.jpg" alt=""></a></figure>
+                        <div class="lower-content">
+                            <h3><a href="#">Residential Waters</a></h3>
+                            <div class="text">Exercitation kamco sed laboris aliquip duis aute ure dolor laboret buica dolore magna aliqua duis aute irure.</div>
+                            <h4 class="price">Starts from $35</h4>
+                            <div class="btn-box"><a href="#">Order Now</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="service-block-one">
-                <div class="inner-box">
-                    <figure class="image-box"><a href="#"><img src="/assets/rabia/Uaques/service-2.jpg" alt=""></a></figure>
-                    <div class="lower-content">
-                        <h3><a href="#">Commercial Waters</a></h3>
-                        <div class="text">Exercitation kamco sed laboris aliquip duis aute ure dolor laboret buica dolore magna aliqua duis aute irure.</div>
-                        <h4 class="price">Starts from $32</h4>
-                        <div class="btn-box"><a href="#">Order Now</a></div>
+            <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                <div class="service-block-one wow flipInY" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <figure class="image-box"><a href="#"><img src="/assets/rabia/Uaques/service-2.jpg" alt=""></a></figure>
+                        <div class="lower-content">
+                            <h3><a href="#">Commercial Waters</a></h3>
+                            <div class="text">Exercitation kamco sed laboris aliquip duis aute ure dolor laboret buica dolore magna aliqua duis aute irure.</div>
+                            <h4 class="price">Starts from $32</h4>
+                            <div class="btn-box"><a href="#">Order Now</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="service-block-one">
-                <div class="inner-box">
-                    <figure class="image-box"><a href="#"><img src="/assets/rabia/Uaques/service-3.jpg" alt=""></a></figure>
-                    <div class="lower-content">
-                        <h3><a href="#">Filtration Plants</a></h3>
-                        <div class="text">Exercitation kamco sed laboris aliquip duis aute ure dolor laboret buica dolore magna aliqua duis aute irure.</div>
-                        <h4 class="price">Starts from $40</h4>
-                        <div class="btn-box"><a href="#">Order Now</a></div>
+            <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                <div class="service-block-one wow flipInY" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <figure class="image-box"><a href="#"><img src="/assets/rabia/Uaques/service-3.jpg" alt=""></a></figure>
+                        <div class="lower-content">
+                            <h3><a href="#">Filtration Plants</a></h3>
+                            <div class="text">Exercitation kamco sed laboris aliquip duis aute ure dolor laboret buica dolore magna aliqua duis aute irure.</div>
+                            <h4 class="price">Starts from $40</h4>
+                            <div class="btn-box"><a href="#">Order Now</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- service-layout-2 end -->
+<!-- service-layout-1 end -->
 @endsection

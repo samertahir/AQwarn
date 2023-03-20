@@ -13,17 +13,15 @@ class CreateFeedbackTable extends Migration
      */
     public function up()
     {
-        Schema::create('feedback', function (Blueprint $table) {
+        //
+        Schema::create('feedbacks', function (Blueprint $table) {
             $table->id();
             $table->string('user_name');
-            $table->string('contact_no');
             $table->string('email_id');
-            $table->string('subject');
             $table->string('message');
-            $table->date('feedback_date');
-            $table->timestamps();
-        });
-    }
+            $table->integer('feedback_date');
+    });
+}
 
     /**
      * Reverse the migrations.
@@ -32,6 +30,6 @@ class CreateFeedbackTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('feedback');
+        Schema::dropIfExists('feedbacks');
     }
 }

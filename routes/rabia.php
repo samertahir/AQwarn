@@ -25,7 +25,7 @@ Route::get("blogs",[UserProductController::class,'index']);
 Route::get("home",[HomeController::class,'index']);
 Route::get("contact",[ContactController::class,'index']);
 Route::get("aboutus",[PagesAboutUsController::class,'index']);
-Route::get("error",[PagesErrorController::class,'index']);
+Route::get("errorpage",[PagesErrorController::class,'index']);
 Route::get("ourservices",[PagesOurSErvicesController::class,'index']);
 Route::get("ourfaqs",[PagesOurfaqsController::class,'index']);
 Route::get("shopdeliveryform",[ShopDeliveryFormController::class,'index']);
