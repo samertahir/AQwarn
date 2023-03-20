@@ -71,6 +71,7 @@ class RegisterController extends Controller
             'contact_no' => $data['contact_no'],
             'cnic_no' => $data['cnic_no'],
             'dob' => $data['dob'],
+            'address' => $data['address'],
             'street_id' => $data['street_id'],
             'city_id' => $data['city_id'],
             'location_id' => $data['location_id'],

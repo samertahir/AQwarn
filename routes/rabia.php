@@ -40,5 +40,4 @@ Route::get("service 01",[Service1Controller::class,'index']);
 Route::get("information layout",[InformationController::class,'index']);
 Route::get("our mission layout",[OurMissionController::class,'index']);
 Route::get("filteration",[FilterationController::class,'index']);
-
-
+// Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');

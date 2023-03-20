@@ -105,7 +105,7 @@
                     <div class="comments-form-area">
                         <h2 class="group-title">Add a Comment</h2>
                         <div class="text">Your email address will not be published. Required fields are marked with a *</div>
-                        <form action="#" method="post" class="comment-form">
+                        <form action="" method="post" class="comment-form">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                     <label>Your Name *</label>
