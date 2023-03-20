@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class DropColumnToUserTable extends Migration
+class AddDeviceIdToDevices extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class DropColumnToUserTable extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('device_id');
+        Schema::table('devices', function (Blueprint $table) {
+            $table->integer('device_id');
         });
     }
 
@@ -25,6 +25,8 @@ class DropColumnToUserTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('devices', function (Blueprint $table) {
+            $table->dropColumn('device_id');
+        });
     }
 }

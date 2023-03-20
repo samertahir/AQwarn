@@ -15,6 +15,7 @@ use App\Http\Controllers\LocationController;
 use App\Http\Controllers\StreetController;
 use App\Http\Controllers\ProvinceController;
 use App\Http\Controllers\CityController;
+use App\Http\Controllers\ProfileController;
 
 
 
@@ -67,7 +68,7 @@ use Illuminate\Support\Facades\Route;
         });
        // Admin/Devices Route Group
            Route::group(['prefix' =>'/device'], function() {
-        //    Route::get('/',[CategoryController::class,'category'])->name('category.index');
+            Route::get('/',[ProfileController::class,'get'])->name('device.index');
         //    Route::get('/create',[CategoryController::class,'create'])->name('category.create');
         //    Route::post('/store',[CategoryController::class,'store'])->name('category.store');
         //    Route::get('/edit/{id}',[CategoryController::class,'edit'])->name('category.edit');
@@ -79,11 +80,11 @@ use Illuminate\Support\Facades\Route;
             // Admin/User Route Group
             Route::group(['prefix' => '/user'], function() {
             Route::get('/',[UserController::class,'user'])->name('user.index');
-            Route::get('/create',[UserController::class,'create'])->name('user.create');
-            Route::post('/store',[UserController::class,'store'])->name('user.store');
-            Route::get('/edit',[UserController::class,'edit'])->name('user.edit');
-            Route::get('/update',[UserController::class,'update'])->name('user.update');
-            Route::get('/delete',[UserController::class,'delete'])->name('user.delete');
+            // Route::get('/create',[UserController::class,'create'])->name('user.create');
+            // Route::post('/store',[UserController::class,'store'])->name('user.store');
+            // Route::get('/edit',[UserController::class,'edit'])->name('user.edit');
+            // Route::get('/update',[UserController::class,'update'])->name('user.update');
+            // Route::get('/delete',[UserController::class,'delete'])->name('user.delete');
 
         });
 
@@ -186,6 +187,7 @@ use Illuminate\Support\Facades\Route;
 
 
    Auth ::routes();
+   Route::get("c",[CartItemsController::class,'index']);
    //cartitems
    Route::get("cartdetails",[CartItemsController::class,'index']);
    Route::get("delete/{id}",[CartItemsController::class,'delete']);
