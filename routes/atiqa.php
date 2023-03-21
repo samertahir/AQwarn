@@ -89,12 +89,12 @@ use Illuminate\Support\Facades\Route;
 
             // Admin/Order Route Group
             Route::group(['prefix' => '/order'], function() {
-            Route::get('/',[OrderController::class,'order'])->name('order.index');
-            Route::get('/create',[OrderController::class,'create'])->name('order.create');
-            Route::get('/store',[OrderController::class,'store'])->name('order.store');
-            Route::get('/edit',[OrderController::class,'edit'])->name('order.edit');
-            Route::get('/update',[OrderController::class,'update'])->name('order.update');
-            Route::get('/delete',[OrderController::class,'delete'])->name('order.delete');
+            Route::get('/',[OrderController::class,'index'])->name('order.index');
+            // Route::post('/create',[OrderController::class,'create'])->name('order.create');
+            // Route::('/store',[OrderController::class,'store'])->name('order.store');
+            //   Route::get('/edit/{id}',[OrderController::class,'edit'])->name('order.edit');
+             Route::post('/update/{id}',[OrderController::class,'update'])->name('order.update');
+            // Route::get('/delete',[OrderController::class,'delete'])->name('order.delete');
 
         });
 
