@@ -731,6 +731,20 @@
     const db = getDatabase();
     // const issuesRef = db.ref('Test/');
     @yield('fcm-db')
+
+    const issuesRef = ref(db, '/Board/145612375/level');
+    // console.log(issuesRef);
+
+    onValue(issuesRef, (snapshot) => {
+      const value = snapshot.val();
+      if(value<=10){
+          alert("the value of device 145612375 is less.");
+      }
+      // document.getElementById('db_value').innerHTML = value;
+    // snapshot.forEach(snap => {
+
+    // })
+  });
     </script>
 </body>
 
