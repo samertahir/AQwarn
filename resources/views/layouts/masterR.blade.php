@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
 	<title>FYP</title>
     <link rel="stylesheet" href="{{ asset('/assets/rabia/bootstrap.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('/assets/rabia/bootstrap.min.js') }}">

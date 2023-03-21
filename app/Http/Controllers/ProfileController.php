@@ -10,6 +10,7 @@ use Symfony\Component\Console\Input\Input;
 
 class ProfileController extends Controller
 {
+  
     public function index()
     {
       

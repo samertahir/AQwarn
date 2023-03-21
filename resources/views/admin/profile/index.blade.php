@@ -10,6 +10,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <style>
 * {
   box-sizing: border-box;
@@ -106,8 +107,16 @@ body {
             <a href="#"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-linkedin"></i></a>
             <a href="#"><i class="fa fa-facebook"></i></a></ul>
-            <p><button class="btn btn-primary">Contact</button></p>
-            
+            <p><a href="/contact" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Contact</a><p><br>
+          
+            <a class="btn btn-primary" href="{{ route('logout') }}"
+            onclick="event.preventDefault();
+                          document.getElementById('logout-form').submit();">
+             {{ __('Logout') }}
+         </a>
+         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+          @csrf
+      </form>
           </div></div>
        </div>
         
@@ -132,8 +141,8 @@ body {
   </div>
 </div>
 @auth
-    
-    <a href="/logout">Logout</a>
+  
+
 @endauth
 </body>
 </html>
