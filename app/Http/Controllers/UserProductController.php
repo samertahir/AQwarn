@@ -14,9 +14,9 @@ class UserProductController extends Controller
     {
         return view("navbar.BLOG.index");
     }
-    public function feedback()
-    {
-        $feedback=new Feedback();
+    // public function feedback()
+    // {
+    //     $feedback=new Feedback();
 
-    }
+    // }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\OrderItem;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 class ReportController extends Controller
@@ -13,21 +14,26 @@ class ReportController extends Controller
 
 
     public function report ()
-    {
 
-        return view('admin.reports.index');
+    {
+        // $order_items=OrderItem::where('')
+
+
+         return view('admin.reports.index');
 
     }
-    public function create ()
-    {
+    // public function create ()
+    // {
 
-        return view('admin.reports.create');
+    //     return view('admin.reports.create');
 
-    }
-    public function edit ()
-    {
+    // }
+    // public function edit ()
+    // {
 
-        return view('admin.reports.create');
+    //     return view('admin.reports.create');
 
-    }
+    // }
+
+
 }

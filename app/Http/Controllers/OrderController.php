@@ -73,11 +73,29 @@ class OrderController extends Controller
         // $orders->product_id=$items->id;
         // // $items=CartItems::where('user_id',$user_id)->where('product_id',$pid)
         // $orders->discount_rate=$items->$discount;
+
+        if($orders->is_pre_order=$request->is_pre_order){
+
+
+        $orders->date=$request->date;
+    }
+        else{
+            $orders ->date=date('Y-m-d H:i:s');
+        }
+
+
         $orders->discount_rate=$discount_rate;
         $orders->delivery_charges=$delivery_charges;
         $orders->order_total=$order_total;
 
-        $orders->save();
+        // $orders->save();
+        $saved = $orders->save();
+        if ($saved) {
+                     return redirect()->back()->with('success','your order is placed. ');
+                }
+            else{
+                    return response()->json('something went wrong');
+                }
         $cartitems=CartItems::where('user_id',$user_id)->get();
         foreach($cartitems as $items){
             OrderItem::create([
@@ -99,7 +117,8 @@ class OrderController extends Controller
         $orders->update(['order_total'=> $order_total, 'discount_rate'=>$discount_rate]);
         $cartitems=CartItems::where('user_id',$user_id)->delete();
 
-        return redirect()->back();
+
+        return redirect('/home');
 
     //     return $orders;
     //     $saved = $orders->save();
@@ -119,7 +138,9 @@ class OrderController extends Controller
         // $data=$request->$orders->status;
         // $orders->status=$request->status;
         //   dd($data);
-
+        if($request->status=="Deliver"){
+            $data['date'] = date('Y-m-d H:i:s');
+        }
         $orders->update($data);
         return redirect()->route('order.index');
 

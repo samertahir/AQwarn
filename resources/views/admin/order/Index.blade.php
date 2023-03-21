@@ -23,7 +23,10 @@
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Email</th>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Contact No</th>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Status</th>
+
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Delivery Charges</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Pre Order</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Delivery Date</th>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Action</th>
                       <th class="text-secondary opacity-7"></th>
                       <th class="text-secondary opacity-7"></th>
@@ -43,18 +46,30 @@
                       <td>{{$order->contact_no}}</td>
                       <td>{{$order->status}}</td>
                       <td>{{$order->delivery_charges}}</td>
+                      <td>{{$order->is_pre_order}}</td>
+                      <td>{{$order->date}}</td>
                       <td>
-                        <form action="{{ route('order.update',$order->id)}}" method="post">
-                            @csrf
-                        <select  required name="status" >
 
-                            <option value="" >Select Order Status</option>
-                            <option value="Process" >Process</option>
-                            <option value="Deliver" >Deliver</option>
-                            <option value="Cancel" >Cancel</option>
 
-                            </select>
-                            <input type="submit" name="Update">
+<div>
+
+    <form action="{{ route('order.update',$order->id)}}" method="post">
+        @csrf
+
+    <select  required name="status" >
+
+
+
+        <option value="" >Select Order Status</option>
+        <option value="Process" >Process</option>
+        <option value="Deliver" >Deliver</option>
+        <option value="Cancel" >Cancel</option>
+
+        </select>
+        <input type="submit" name="Update">
+
+
+</div>
                         </form>
                     </td>
                       {{-- <td class="align-middle text-center">

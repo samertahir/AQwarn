@@ -21,6 +21,7 @@ use App\Http\Controllers\OurMissionController;
 use App\Http\Controllers\InformationController;
 use Illuminate\Support\Facades\Route;
 
+Route::get("/",[HomeController::class,'index']);
 Route::get("blogs",[UserProductController::class,'index']);
 Route::get("home",[HomeController::class,'index']);
 Route::get("contact",[ContactController::class,'index']);

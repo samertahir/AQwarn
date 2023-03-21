@@ -183,16 +183,29 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-6 col-md-6 col-sm-12 inner-column">
                         <div id="content_block_three">
                             <div class="inner-box">
+
+
                                 <h2>Delivery Order Form</h2>
                                 <div class="form-inner">
                                     <form action="{{ route('shop.store') }}" method="Post" class="order-form">
                                         @csrf
                                         <div class="row clearfix">
                                             <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                                <label>Name</label>
+
+                                                <select required name="is_pre_order"  onchange="yesnoCheck(this);">
+
+
+
+
+                                                    <option value="0" >Normal</option>
+                                                    <option value="1" >Pre Order</option>
+
+                                                    </select>
+                                                    <label>Name</label>
                                                 <input type="text" name="name" required="" value="">
                                             </div>
                                             <div class="col-lg-6 col-md-12 col-sm-12 form-group">
@@ -206,7 +219,24 @@
                                             <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                                 <label>Address</label>
                                                 <input type="text" name="address" required="" value="">
+
+
+                                                <div id="ifYes" style="display: none;">
+                                                    <label for="date">Date</label>
+                                                     <input type="date"  name="date" value="">
+                                                </div>
                                             </div>
+                                            <script type="text/javascript">
+                                            function yesnoCheck(that) {
+                                                if (that.value == "1") {
+
+                                                    document.getElementById("ifYes").style.display = "block";
+                                                } else {
+                                                    document.getElementById("ifYes").style.display = "none";
+                                                }
+                                            }
+                                        </script>
+
                                             {{-- <div class="col-lg-6 col-md-12 col-sm-12 form-group">
                                             <label>No. of Bottles</label>
                                             <div class="select-box">
@@ -234,6 +264,12 @@
                                                 <div class="btn-box">
                                                     {{-- <button type="submit">Place My Order</button> href="/shopdeliveryform"--}}
                                                     <input type="submit"  value="Place My Order" class="btn btn-primary btn-sm" />
+                                                    {{-- @if (session('status'))
+        <div class="alert alert-success">
+            <button class="close" type="button" data-dismiss="alert" aria-label="Close"> x </button>
+            {{ session('status') }} --}}
+        {{-- </div>
+    @endif --}}
                                                 </div>
                                             </div>
                                         </div>

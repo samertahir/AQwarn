@@ -34,16 +34,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+// Route::get('/',function(){
+//     return view('admin');});
 
          Route::get('/addCart/{pid}',[CartItemsController::class,'add'])->name('cart.addcart');
-         Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function(){
+         Route::prefix('/admin')->middleware(['auth','isAdmin'])->group(function(){
 
              // Admin Route Group
 
-            Route::get('/',function(){
-            return view('admin');
-        });
+
+
             // Admin/Products Route Group
             Route::group(['prefix' => '/products'], function() {
             Route::get('/',[ProductController::class,'product'])->name('product.index');
