@@ -31,6 +31,12 @@
 
     <br>
     <div class="container">
+         @if (session('success'))
+            <div class="alert alert-success">
+                <button class="close" type="button" data-dismiss="alert" aria-label="Close"> x </button>
+                {{ session('success') }}
+            </div>
+        @endif
         <div class="row">
       <div class="column"><h1>PURE & HEALTHY <br> Drinking WAter</h1></div>
       <div class="column"> <img src="/assets/rabia/Uaques/double-bottle.png"></div>
@@ -99,7 +105,7 @@
 
 
 
-  
+
 
 
         <div class="container-fluid mt-5 mb-3 bg-light">

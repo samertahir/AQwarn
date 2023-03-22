@@ -40,6 +40,10 @@ use Illuminate\Support\Facades\Route;
          Route::get('/addCart/{pid}',[CartItemsController::class,'add'])->name('cart.addcart');
          Route::prefix('/admin')->middleware(['auth','isAdmin'])->group(function(){
 
+            Route::get('/', function(){
+                return view('admin');
+            })->name('admin.index');
+
              // Admin Route Group
 
 

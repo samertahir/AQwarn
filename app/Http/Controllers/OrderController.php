@@ -37,13 +37,13 @@ class OrderController extends Controller
     // }
     public function index()
     {
-         //Create a variable to get data from database and show it in index
-         //$Category is model name & __ object name(table name)
-         $orders=Orders::get();
+        //Create a variable to get data from database and show it in index
+        //$Category is model name & __ object name(table name)
+        $orders = Orders::get();
 
 
-         return view('admin.order.index',compact('orders'));
-        }
+        return view('admin.order.index', compact('orders'));
+    }
 
 
     public function store(Request $request)
@@ -57,9 +57,9 @@ class OrderController extends Controller
 
 
         // dd($discount_rate);
-         $discount_rate=0;
-         $delivery_charges = 150;
-         $order_total=0;
+        $discount_rate = 0;
+        $delivery_charges = 150;
+        $order_total = 0;
 
         // $order_data = $request->all();
         $orders = new Orders();
@@ -74,77 +74,62 @@ class OrderController extends Controller
         // // $items=CartItems::where('user_id',$user_id)->where('product_id',$pid)
         // $orders->discount_rate=$items->$discount;
 
-        if($orders->is_pre_order=$request->is_pre_order){
+        if ($orders->is_pre_order = $request->is_pre_order) {
 
 
-        $orders->date=$request->date;
-    }
-        else{
-            $orders ->date=date('Y-m-d H:i:s');
+            $orders->date = $request->date;
+        } else {
+            $orders->date = date('Y-m-d H:i:s');
         }
 
 
-        $orders->discount_rate=$discount_rate;
-        $orders->delivery_charges=$delivery_charges;
-        $orders->order_total=$order_total;
+        $orders->discount_rate = $discount_rate;
+        $orders->delivery_charges = $delivery_charges;
+        $orders->order_total = $order_total;
 
         // $orders->save();
         $saved = $orders->save();
-        if ($saved) {
-                     return redirect()->back()->with('success','your order is placed. ');
-                }
-            else{
-                    return response()->json('something went wrong');
-                }
-        $cartitems=CartItems::where('user_id',$user_id)->get();
-        foreach($cartitems as $items){
+        // if ($saved) {
+        //     return redirect()->back()->with('success', 'your order is placed. ');
+        // } else {
+        //     return response()->json('something went wrong');
+        // }
+        $cartitems = CartItems::where('user_id', $user_id)->get();
+        foreach ($cartitems as $items) {
             OrderItem::create([
 
-                'product_id'=>$items->product_id,
-                'order_id'=> $orders->id,
-                'quantity'=> $items->quantity,
-                'product_price'=>$items->price,
+                'product_id' => $items->product_id,
+                'order_id' => $orders->id,
+                'quantity' => $items->quantity,
+                'product_price' => $items->price,
                 // 'discount_rate'=>$items->products->discount,
 
 
 
             ]);
-            $order_total+=$items->price*$items->quantity;
-            $discount_rate+=$items->discount;
-        //   $product=Product::where('id', '=', $orderItem->product_id)->decrement('quantity',$item->quantity);
-            $products =Product::find($items->product_id)->decrement('quantity_in_hand',$items->quantity);
+            $order_total += $items->price * $items->quantity;
+            $discount_rate += $items->discount;
+            //   $product=Product::where('id', '=', $orderItem->product_id)->decrement('quantity',$item->quantity);
+            // $products = Product::find($items->product_id)->decrement('quantity_in_hand', $items->quantity);
         }
-        $orders->update(['order_total'=> $order_total, 'discount_rate'=>$discount_rate]);
-        $cartitems=CartItems::where('user_id',$user_id)->delete();
+        $orders->update(['order_total' => $order_total, 'discount_rate' => $discount_rate]);
+        $cartitems = CartItems::where('user_id', $user_id)->delete();
 
-
-        return redirect('/home');
-
-    //     return $orders;
-    //     $saved = $orders->save();
-    //     if ($saved) {
-    //         return redirect()->back()->with('success','your order is placed. ');
-    //     }
-    // else{
-    //         return response()->json('something went wrong');
-    //     }
-     }
-     public function update(Request $request,$id)
+        return redirect('/')->with('success', 'your order is placed.');
+    }
+    public function update(Request $request, $id)
     {
         //$id=$request->$id;
 
-        $orders=Orders::find($id);
-        $data=$request->all();
+        $orders = Orders::find($id);
+        $data = $request->all();
         // $data=$request->$orders->status;
         // $orders->status=$request->status;
         //   dd($data);
-        if($request->status=="Deliver"){
+        if ($request->status == "Deliver") {
             $data['date'] = date('Y-m-d H:i:s');
         }
         $orders->update($data);
         return redirect()->route('order.index');
-
     }
-
-
 }
