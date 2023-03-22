@@ -112,17 +112,6 @@ use Illuminate\Support\Facades\Route;
             Route::get('/delete',[ReportController::class,'delete'])->name('reports.delete');
         });
 
-            // Admin/Stock Route Group
-            Route::group(['prefix' => '/stock'], function() {
-            Route::get('/',[StockController::class,'stock'])->name('stock.index');
-            Route::get('/create',[StockController::class,'create'])->name('stock.create');
-            Route::get('/store',[StockController::class,'store'])->name('stock.store');
-            Route::get('/edit',[StockController::class,'edit'])->name('stock.edit');
-            Route::get('/update',[StockController::class,'update'])->name('stock.update');
-            Route::get('/delete',[StockController::class,'delete'])->name('stock.delete');
-
-        });
-
             // Admin/Role Route Group
             Route::group(['prefix' => '/role'], function() {
             Route::get('/',[RoleController::class,'role'])->name('role.index');
